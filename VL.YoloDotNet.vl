@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="KsSdsjY1DFOQPzMLkyqW5x" LanguageVersion="2025.7.0-0167-g0cfb068072" Version="0.128">
-  <NugetDependency Id="KavmTh4fTsnQVR7nIJVEAX" Location="VL.CoreLib" Version="2025.7.0-0167-g0cfb068072" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="KsSdsjY1DFOQPzMLkyqW5x" LanguageVersion="2025.7.0-0369-g117540fa59" Version="0.128">
+  <NugetDependency Id="KavmTh4fTsnQVR7nIJVEAX" Location="VL.CoreLib" Version="2025.7.0-0369-g117540fa59" />
   <Patch Id="Ky7DeankOAENoa2AVdXw85">
     <Canvas Id="Ns5WDYDNtQlOMVrugXWXaK" DefaultCategory="YoloDotNet" CanvasType="FullCategory">
       <!--
@@ -1538,6 +1538,7 @@
               <Pin Id="OPFgVSSEWDxPQjmArUosPz" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="OJqDCv6SZXaLYKN7ANuR25" Name="Start" Kind="InputPin" />
               <Pin Id="OPaQB0zW76SOS1B4IIfD0S" Name="Cancel" Kind="InputPin" />
+              <Pin Id="MhtrAmJ0QJnLNo2GxIacX2" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="BmBBtlMbcw0PV78atELYyu" Name="On Finished" Kind="OutputPin" />
               <Pin Id="OKcsdbTD2nLN54yOC0p5h6" Name="On Exception" Kind="OutputPin" />
               <Pin Id="Kn87Kbq7I4zO1KtL8zlsCb" Name="On Cancelled" Kind="OutputPin" />
@@ -1705,6 +1706,7 @@
               <Pin Id="DiGL6NyfdunMWFrRy2u5tD" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="QzGDnryG4S7NtOFJSGeXsV" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="GuZXntj3Z42P2XAZB1TiRr" Name="Reset" Kind="InputPin" />
+              <Pin Id="JPXCSuUwEkCNtTURGjwe2s" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="OFteNInVfXuMCEMxaSO1Hc" Name="Value" Kind="OutputPin" />
               <Pin Id="Af9ulGm06Q8MWHfhw9sUkd" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -1997,6 +1999,7 @@
               <Pin Id="Ui2hsWAI7P1LEPz5VtVcUe" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="LVsoDcPAzJjLE6dPI8h2Eq" Name="Start" Kind="InputPin" />
               <Pin Id="TdqSpXSuQ1aLg3MoSYCthN" Name="Cancel" Kind="InputPin" />
+              <Pin Id="Alb87PQjw84QX7CjlsvfUW" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="PFM5knTy3yPOuXNAyA9WM3" Name="On Finished" Kind="OutputPin" />
               <Pin Id="JJD2hgS0IBkLqYwMgFP7WW" Name="On Exception" Kind="OutputPin" />
               <Pin Id="HAN31lhRcEzLk7kq3UgM7n" Name="On Cancelled" Kind="OutputPin" />
@@ -2157,6 +2160,7 @@
               <Pin Id="SGL96lWkvs8QF82PFgWik8" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="IaOjd9IdSZ9OuyJntumK4G" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="K1tJQvtjFcUPMAux6POn5e" Name="Reset" Kind="InputPin" />
+              <Pin Id="JPLZS1d9e3xLZMXZI7aZiP" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="SyM424tEyWANpggJ1yB5WF" Name="Value" Kind="OutputPin" />
               <Pin Id="LZBlHsSua7gQSuTDYeaewK" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -3889,6 +3893,7 @@
               <Pin Id="TTaCxYKqBC5P4rx0Sr77Fw" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="JWujSuDOD2rPCvTgxe9WMz" Name="Start" Kind="InputPin" />
               <Pin Id="SX0xVUDtqCdQCd8Ipn3228" Name="Cancel" Kind="InputPin" />
+              <Pin Id="LpbRfg362ngQF4mdptQhji" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="Q3bzfnLf5Z4QG1z3lYHVJc" Name="On Finished" Kind="OutputPin" />
               <Pin Id="S5rXPViDYRnL0LOJPDxPQe" Name="On Exception" Kind="OutputPin" />
               <Pin Id="KkcR7PlXUMSOzVHk4fiSDG" Name="On Cancelled" Kind="OutputPin" />
@@ -4056,6 +4061,7 @@
               <Pin Id="Jug0O9tYmDENqaiDTzFs4A" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="PUKhBiQHg78OuvPLOp5me0" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="IYcX42T0N0pMHbd60vZ3LH" Name="Reset" Kind="InputPin" />
+              <Pin Id="C7CRdfUw5kMNEvVhnKBH8N" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="JBMuKBifnRKLdrbdjZeGsA" Name="Value" Kind="OutputPin" />
               <Pin Id="Na0JwCZIv1pNx9DXqL6u4E" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -4364,6 +4370,7 @@
               <Pin Id="NLzIXZGAHE2MQZj6FKrraY" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="T4IqINTPYDWN7COK51f2tJ" Name="Start" Kind="InputPin" />
               <Pin Id="LI1GPxCWgbrPLHIIDJ2bCo" Name="Cancel" Kind="InputPin" />
+              <Pin Id="GFty26788FVPD43zTCEyNK" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="LmH9CqdEJ4nLY5DPrMFk9N" Name="On Finished" Kind="OutputPin" />
               <Pin Id="KQspR9jXRBqPKugoGXuin5" Name="On Exception" Kind="OutputPin" />
               <Pin Id="As4aC9WijKaL18mmByClgZ" Name="On Cancelled" Kind="OutputPin" />
@@ -4532,6 +4539,7 @@
               <Pin Id="N81q0478LqePUxGxoSlnK0" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="IePjhQmNWNXL5pssUVzNoN" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="NerzE2e1LZXM9nlhKByvt6" Name="Reset" Kind="InputPin" />
+              <Pin Id="O9wMswg582JM7T61YLvatl" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="Jxk1GP7ohZiQNAFBqFGAMF" Name="Value" Kind="OutputPin" />
               <Pin Id="CnB2iN5KFQsLHuZCjy4PEg" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -4898,6 +4906,7 @@
               <Pin Id="U6mv2VCbkQrOnVtYYNFZq6" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="Eab4UmL7kjqPAEk2yXhlPt" Name="Start" Kind="InputPin" />
               <Pin Id="BxZSwpZ0AnDL0xphtlRhBT" Name="Cancel" Kind="InputPin" />
+              <Pin Id="I0IPDeZZ2yJLpiPRufG6Oo" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="PldqwKoQUNZNfkWsQSWqsB" Name="On Finished" Kind="OutputPin" />
               <Pin Id="OFiCl1p88AGPNUaQQiochy" Name="On Exception" Kind="OutputPin" />
               <Pin Id="D0DiCN1QEncQP6GCLUBpOI" Name="On Cancelled" Kind="OutputPin" />
@@ -5065,6 +5074,7 @@
               <Pin Id="LY0TXOmn3LcOrbbDpvfa3N" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="IfSTxNiezVcOYMRElXp7cJ" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="M0u2WGGsugQPy6YPNphXRp" Name="Reset" Kind="InputPin" />
+              <Pin Id="BmSfmjBMhasP9Vn3ESbmGq" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="RK6Cv2wrQmwN6BiZ6mF9aM" Name="Value" Kind="OutputPin" />
               <Pin Id="J5FIS5l97OzN3gymbsW8EB" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -6126,6 +6136,7 @@
               <Pin Id="FFNegPl4lYxNrw7Ehgj66A" Name="Bounds" Kind="InputPin" />
               <Pin Id="EZ9VLH33mTFPc2jirUGM0h" Name="Paint" Kind="InputPin" />
               <Pin Id="AuKEvccmkksMbB3NRp0aXP" Name="Enabled" Kind="InputPin" />
+              <Pin Id="U2nHBvy3W0LPDcw5jquDiz" Name="State Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="CxKLmuNWiNyMxf2CPFyNAN" Name="Output" Kind="OutputPin" />
             </Node>
             <Node Bounds="424,540,105,19" Id="FH6wHWfPDoXNRPaoXNsHeE">
@@ -6825,6 +6836,7 @@
                   <Pin Id="UH1SzUiGWgFPvdDpPsoFyz" Name="Bounds" Kind="InputPin" />
                   <Pin Id="LZUdCVHkYVePn74Ba9YU6r" Name="Paint" Kind="InputPin" />
                   <Pin Id="SnlKmajM8umOwYQoJS0uyx" Name="Enabled" Kind="InputPin" />
+                  <Pin Id="NGSJ5SiyS5oNERuQfoixnA" Name="State Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="UOop18Bxv0uMKKknu1juIc" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="724,530,105,19" Id="EecTNm2T5bPM87fMwlPZFB">
@@ -7374,6 +7386,7 @@
               <Pin Id="AnOPYYBh704Ph8rjG0yX1v" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="BcScHd7SKcQMso2CUHbKks" Name="Start" Kind="InputPin" />
               <Pin Id="BuRyLLhXNFtLKAaIWVQxz6" Name="Cancel" Kind="InputPin" />
+              <Pin Id="L15LYxhhMXdMEMzypFoJic" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="AJkoWlFh7E0Px2PWiuls4g" Name="On Finished" Kind="OutputPin" />
               <Pin Id="EO6GiJReFG4Oy1LsxqdKtf" Name="On Exception" Kind="OutputPin" />
               <Pin Id="DjqcRwo0AlwL4LY77xqBet" Name="On Cancelled" Kind="OutputPin" />
@@ -7541,6 +7554,7 @@
               <Pin Id="MOd4XmBeOxQLPOyIH2HuiD" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="V0i9wrXZSNOOK9Bzhrn7u2" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="KinFyjkxneXP9TbY4GrRwX" Name="Reset" Kind="InputPin" />
+              <Pin Id="MRZOZbHfqqiQCXchdkh7iU" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="B1ifssFQVdlLOkyFxYiyML" Name="Value" Kind="OutputPin" />
               <Pin Id="OhBULlf7rN2OFFIvTDvSeS" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -8858,6 +8872,7 @@
                   <Pin Id="OCbq11nhC6rM3ae22fsZqj" Name="Bounds" Kind="InputPin" />
                   <Pin Id="AjgGQLwmHLXQUkitsPPgLm" Name="Paint" Kind="InputPin" />
                   <Pin Id="FgCMICblK1FLxYdlnQvNHP" Name="Enabled" Kind="InputPin" />
+                  <Pin Id="K8D7NeaSh8tONdgiwlxTNf" Name="State Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="LNN4ej6uUCsNT4hOPTqo7D" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="715,504,105,19" Id="OiZFpQ3dZfSOTcLfuaunon">
@@ -10151,6 +10166,7 @@
               <Pin Id="JVMSJdyiayaP8G9Gb8mhPq" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="MbJXi03IDGRNxN1s2ZlHJ7" Name="Start" Kind="InputPin" />
               <Pin Id="IgxVOpswbgCLmoXrFSQKRQ" Name="Cancel" Kind="InputPin" />
+              <Pin Id="Tzoy4WLNVeqMHv6NRTycfm" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="Nx8M5L11VmyOxWtB8x0b60" Name="On Finished" Kind="OutputPin" />
               <Pin Id="GIJMHbsEioQNpIVyCvFEYy" Name="On Exception" Kind="OutputPin" />
               <Pin Id="TQzGwbyVNUkLfNC4lDLE3C" Name="On Cancelled" Kind="OutputPin" />
@@ -10310,6 +10326,7 @@
               <Pin Id="NbHld88OlhoPDnCr9CfNAh" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="JYLT1C6bUC2O0Mw5YQWkQE" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="NOKD4BTSvGfOZ9Kym911iJ" Name="Reset" Kind="InputPin" />
+              <Pin Id="KKlrlSPP7q9Pz0WZUr22mv" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="EjCSDk1OyBaNdasD4iB7WG" Name="Value" Kind="OutputPin" />
               <Pin Id="MZZ0690kPlRLK5nZtgErOG" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -10527,6 +10544,7 @@
               <Pin Id="AyNqpQOebbgN1eCezsptzh" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="Bi3OwRKDb7jOd7vRsB0ZI3" Name="Start" Kind="InputPin" />
               <Pin Id="ANre5NcyAB0PPSFVrJaEpd" Name="Cancel" Kind="InputPin" />
+              <Pin Id="I060c2BOiH1O6jDgeuusFL" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="G3LonGkHrbIOUXUMTKxmR3" Name="On Finished" Kind="OutputPin" />
               <Pin Id="FR8kNZhhnGRLv69OFBl1ie" Name="On Exception" Kind="OutputPin" />
               <Pin Id="UyjlTdZGrffOtZgnM86Lwt" Name="On Cancelled" Kind="OutputPin" />
@@ -10694,6 +10712,7 @@
               <Pin Id="NO3wL2w6AtvL6k5N4R7BJz" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="KjXfF4C09xzQZ8ygdtVT3U" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="SaWgyHr5OzqOEv46YQegEX" Name="Reset" Kind="InputPin" />
+              <Pin Id="IyqVgulO7XqLbBR1vkmleF" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="HfjUG3SUpnSOOLQ9oyEFM5" Name="Value" Kind="OutputPin" />
               <Pin Id="EyGDC5ETL4AMCkqHYpDOa0" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -11943,6 +11962,7 @@
                   <Pin Id="VqZaWG0DsbgPSJQJl8zBRb" Name="Bounds" Kind="InputPin" />
                   <Pin Id="SVefETqsbvYLPR087UC0gl" Name="Paint" Kind="InputPin" />
                   <Pin Id="Lzcv8jIuV0yQJzfHCb5LXW" Name="Enabled" Kind="InputPin" />
+                  <Pin Id="HMp69CV8lJaOWh0XbXWTVY" Name="State Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="AWDATyD88riPMWsnyb2Qqj" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="724,511,105,19" Id="MnXbikcOHaSOGYtU2ZRN5v">
@@ -12516,6 +12536,7 @@
               <Pin Id="SdbfcyS4ycROpy81RuG6ib" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="I7NeVBcTv2yLw34AZO1rvt" Name="Start" Kind="InputPin" />
               <Pin Id="CYZu4LiQqvENNzkf3ZYMCP" Name="Cancel" Kind="InputPin" />
+              <Pin Id="MJYWqnDe3nSOrnJhqiCy5K" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="KjHAO7YtcGnOyaxH01gHYA" Name="On Finished" Kind="OutputPin" />
               <Pin Id="QBAEZuvHdrsMcEVDpqP45c" Name="On Exception" Kind="OutputPin" />
               <Pin Id="VG89PwpIq6JNllkNfug7EM" Name="On Cancelled" Kind="OutputPin" />
@@ -12683,6 +12704,7 @@
               <Pin Id="KhNV8L9jitHPHULrdfPVz3" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="OpH5IcErqbvPb4zp8oRpBl" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="QhQXq0hsmOYP0ulzijlcnX" Name="Reset" Kind="InputPin" />
+              <Pin Id="OWdN2pSmepMMUBao4qqAGH" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="NPR7GIJeOBvOmmmNLMoaHx" Name="Value" Kind="OutputPin" />
               <Pin Id="AjaCn5l6rrNP5chfsdedxF" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -13354,6 +13376,7 @@
               <Pin Id="Ac8J1zWDtQNNhifcCZHg1W" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="DpGDsj1mr7QLwUCZowtnjp" Name="Start" Kind="InputPin" />
               <Pin Id="U3tJOidHZCXNPtY4DTD3Bn" Name="Cancel" Kind="InputPin" />
+              <Pin Id="SsfGz8D3YI5L7Jlql3KWTi" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="FQqzL6pQ5V4PlmRY6fS9B3" Name="On Finished" Kind="OutputPin" />
               <Pin Id="JzPQ00SKaGfPOgL7Nk0AIm" Name="On Exception" Kind="OutputPin" />
               <Pin Id="KhJRZKtKMU4QP9wReMan4E" Name="On Cancelled" Kind="OutputPin" />
@@ -13526,6 +13549,7 @@
               <Pin Id="QA36FPAWCfKLzKpd98U6k0" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="PweGkFphdDzPujBP02119V" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="FfVn7poW4SUQNlD2xA2bVL" Name="Reset" Kind="InputPin" />
+              <Pin Id="LPjfS0NofHLMm5enTi1RkU" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="NlifOVm8433Oj62TmIMbip" Name="Value" Kind="OutputPin" />
               <Pin Id="QsZxqCfLsNdLrh58sYpHt0" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -14550,8 +14574,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="QO8GUmpKwEKQWQ1r7K6gwY" Location="VL.Skia" Version="2025.7.0-0167-g0cfb068072" />
-  <NugetDependency Id="D6b4u48VUq4Oi6oERlezpM" Location="Microsoft.ML.OnnxRuntime.DirectML" Version="1.20.0" />
+  <NugetDependency Id="QO8GUmpKwEKQWQ1r7K6gwY" Location="VL.Skia" Version="2025.7.0-0369-g117540fa59" />
   <NugetDependency Id="CJOea5Ty7WIL9xjYxaLBCl" Location="Microsoft.AI.DirectML" Version="1.15.4" />
   <PlatformDependency Id="Da0DwGJVqc2QMEDhaZWiPq" Location="./lib/YoloDotNet.dll" />
   <DocumentDependency Id="B8fDWKQqNTDPw0K811R22v" Location="./vl/DirectML_Loader.vl" />
@@ -14559,4 +14582,5 @@
   <PlatformDependency Id="JuDHJEoRJD4QDNcYtzAuPY" Location="SkiaSharp.dll" />
   <NugetDependency Id="M1W22ZBn3NOMsZzbBNmLyU" Location="VL.YoloDotNet" Version="0.0.0" />
   <PlatformDependency Id="IiisoY8MRO6MNjONMpQrFt" Location="Stride.Core.Mathematics.dll" />
+  <NugetDependency Id="EHztuFQVgpeLSO9zXf9sHD" Location="Microsoft.ML.OnnxRuntime.Gpu" Version="1.22.0" />
 </Document>
