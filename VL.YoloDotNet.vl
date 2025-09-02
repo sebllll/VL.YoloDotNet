@@ -35,7 +35,7 @@
               <Patch Id="RF4XkNa6ArnLaF66CLY3NK" ManuallySortedPins="true">
                 <Patch Id="AObLPTodfmgNjanQuMbYrt" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="FINGzt9Ex8mL237th9xS1M" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="339,361,107,26" Id="HK4zPItuVV2QBobNoQh9Du">
+                <Node Bounds="339,361,107,19" Id="HK4zPItuVV2QBobNoQh9Du">
                   <p:NodeReference LastCategoryFullName="YoloDotNet.Yolo" LastDependency="YoloDotNet.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="RunObjectDetection" />
@@ -2983,7 +2983,7 @@
                         </p:NodeReference>
                         <Pin Id="G5eoeuvXLZZLUfHbWMF7AB" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="567,436,80,26" Id="Oolwz4GG8WZLf3ZISWfyEn">
+                      <Node Bounds="567,436,80,19" Id="Oolwz4GG8WZLf3ZISWfyEn">
                         <p:NodeReference LastCategoryFullName="YoloDotNet.Models.YoloOptions" LastDependency="YoloDotNet.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="YoloOptions" />
@@ -3012,7 +3012,7 @@
                         <Pin Id="CF46kjwh448NMJrYXFKprT" Name="Options" Kind="InputPin" />
                         <Pin Id="QqWBMXFweaMOpiSsqSJ3HB" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="569,600,60,26" Id="T8MJXUN9DS6LyvMHynqe7x">
+                      <Node Bounds="569,600,60,19" Id="T8MJXUN9DS6LyvMHynqe7x">
                         <p:NodeReference LastCategoryFullName="YoloDotNet.Models.YoloOptions" LastDependency="YoloDotNet.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="YoloOptions" />
