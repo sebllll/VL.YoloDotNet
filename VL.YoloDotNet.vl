@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="KsSdsjY1DFOQPzMLkyqW5x" LanguageVersion="2025.7.0-0369-g117540fa59" Version="0.128">
-  <NugetDependency Id="KavmTh4fTsnQVR7nIJVEAX" Location="VL.CoreLib" Version="2025.7.0-0369-g117540fa59" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="KsSdsjY1DFOQPzMLkyqW5x" LanguageVersion="2025.7.0" Version="0.128">
+  <NugetDependency Id="KavmTh4fTsnQVR7nIJVEAX" Location="VL.CoreLib" Version="2025.7.0" />
   <Patch Id="Ky7DeankOAENoa2AVdXw85">
     <Canvas Id="Ns5WDYDNtQlOMVrugXWXaK" DefaultCategory="YoloDotNet" CanvasType="FullCategory">
       <!--
@@ -108,6 +108,7 @@
                   </p:NodeReference>
                   <Pin Id="LC9FXXuUAjoK99SGYsK7oI" Name="Input" Kind="StateInputPin" />
                   <Pin Id="QyNouZnIBTSMu1wzYb0R5f" Name="Object Detections" Kind="InputPin" />
+                  <Pin Id="Pi4CAwqZatdOSIjKo8Ki97" Name="Options" Kind="InputPin" />
                   <Pin Id="TiKAmlOuPoJLMmvSBLj8vg" Name="Draw Confidence" Kind="InputPin" />
                   <Pin Id="F8ZhgHUbCyWP4IsRRjZ73X" Name="Output" Kind="OutputPin" />
                 </Node>
@@ -127,12 +128,12 @@
               <Pin Id="GzxZ7qaJKLgLnAuyi7Fsuj" Name="Input" Kind="StateInputPin" />
               <Pin Id="H8WY4pjGg9jPDwq8WQvNup" Name="Result" Kind="OutputPin" />
             </Node>
-            <Pad Id="FPSlMA0CI71OqCYTcJ3HjR" Comment="ModelType" Bounds="478,92,96,15" ShowValueBox="true" isIOBox="true" Value="ObjectDetection">
+            <Pad Id="FPSlMA0CI71OqCYTcJ3HjR" Comment="ModelType" Bounds="478,92,103,15" ShowValueBox="true" isIOBox="true" Value="ObjectDetection">
               <p:TypeAnnotation LastCategoryFullName="YoloDotNet.Enums" LastDependency="YoloDotNet.dll">
                 <Choice Kind="TypeFlag" Name="ModelType" />
               </p:TypeAnnotation>
             </Pad>
-            <Pad Id="LDtFAZ6Q9TyNRpJOyEAytA" Comment="ModelVersion" Bounds="489,121,69,15" ShowValueBox="true" isIOBox="true" Value="V8">
+            <Pad Id="LDtFAZ6Q9TyNRpJOyEAytA" Comment="ModelVersion" Bounds="489,121,75,15" ShowValueBox="true" isIOBox="true" Value="V8">
               <p:TypeAnnotation LastCategoryFullName="YoloDotNet.Enums" LastDependency="YoloDotNet.dll">
                 <Choice Kind="TypeFlag" Name="ModelVersion" />
               </p:TypeAnnotation>
@@ -299,9 +300,9 @@
                 <Pin Id="GRSlJSom7zwN8qX4a3hEOw" Name="Confidence" Kind="OutputPin" />
               </Node>
               <Node Bounds="158,727,76,26" Id="VNgv9c8IxTlQJKy639sozi">
-                <p:NodeReference LastCategoryFullName="YoloDotNet.Models.IDetection" LastDependency="YoloDotNet.dll">
+                <p:NodeReference LastCategoryFullName="YoloDotNet.Models.ObjectDetection" LastDependency="YoloDotNet.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="YoloDotNet.Models.IDetection" />
+                  <CategoryReference Kind="AssemblyCategory" Name="ObjectDetection" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="BoundingBox" />
                 </p:NodeReference>
                 <Pin Id="NguNyvatZGZL9DmytvaQCA" Name="Input" Kind="StateInputPin" />
@@ -648,6 +649,7 @@
                   </p:NodeReference>
                   <Pin Id="R37hsj2GVv9LrAoT8kIn6n" Name="Input" Kind="StateInputPin" />
                   <Pin Id="T1mlGPcbV9hNZI4oB3S5XV" Name="Detections" Kind="InputPin" />
+                  <Pin Id="P0HdWUa0wlTQXWGF9HXrE3" Name="Options" Kind="InputPin" />
                   <Pin Id="OZrF14M9SF3OdagpXRIAS5" Name="Draw Confidence" Kind="InputPin" />
                   <Pin Id="KhdzMYv7oxvPiVSAY5LO2L" Name="Output" Kind="OutputPin" />
                 </Node>
@@ -1499,6 +1501,7 @@
                       </p:NodeReference>
                       <Pin Id="FFbPtmlNAWNQPfdLuWTGIE" Name="Input" Kind="StateInputPin" />
                       <Pin Id="Ei0gLNxOQJeOQEJsLO4tvg" Name="Object Detections" Kind="InputPin" />
+                      <Pin Id="Bc7dMcRPshIMNBu1iDsqd9" Name="Options" Kind="InputPin" />
                       <Pin Id="Sql5RPNgp5mMrfDnlwrJ34" Name="Draw Confidence" Kind="InputPin" />
                       <Pin Id="TnFtcFrBAoMOeQCJ8pKxQ4" Name="Output" Kind="OutputPin" />
                     </Node>
@@ -1960,6 +1963,7 @@
                       </p:NodeReference>
                       <Pin Id="DJzv6LSXi4hO8JhVK08XML" Name="Input" Kind="StateInputPin" />
                       <Pin Id="Gugg21U4pmRPHuCfm243hl" Name="Classifications" Kind="InputPin" />
+                      <Pin Id="LSVzdEpd3CPOl6U1XQfKeI" Name="Options" Kind="InputPin" />
                       <Pin Id="JTABd3a32wJOU73y4KgbU0" Name="Draw Confidence" Kind="InputPin" />
                       <Pin Id="OrxWbP9itUdM7H1xStZbrD" Name="Output" Kind="OutputPin" />
                     </Node>
@@ -2944,7 +2948,7 @@
           <Patch Id="MS8BT5zJxe5Mh5wTiAWxh0">
             <Canvas Id="VocQDKUjkY4OLxcfLnAuHM" CanvasType="Group">
               <ControlPoint Id="KAjtjWZ8AU4NnLT8OYAfa4" Bounds="543,223" />
-              <Pad Id="KE6Qb4ccR7dL1E0ADHgdnG" Comment="" Bounds="1047,317,96,15" ShowValueBox="true" isIOBox="true" Value="Segmentation">
+              <Pad Id="KE6Qb4ccR7dL1E0ADHgdnG" Comment="" Bounds="1047,317,103,15" ShowValueBox="true" isIOBox="true" Value="Segmentation">
                 <p:TypeAnnotation LastCategoryFullName="YoloDotNet.Enums" LastDependency="YoloDotNet.dll">
                   <Choice Kind="TypeFlag" Name="ModelType" />
                 </p:TypeAnnotation>
@@ -4867,6 +4871,7 @@
                       </p:NodeReference>
                       <Pin Id="UsRZqkthB5yQH9VvZCVQoP" Name="Input" Kind="StateInputPin" />
                       <Pin Id="JOzvDiBqGBwMCl4pY1QeHj" Name="Detections" Kind="InputPin" />
+                      <Pin Id="KlBQyuh92fHOA6hT48MDg8" Name="Options" Kind="InputPin" />
                       <Pin Id="DeiOmelJDSWOrCqPPnv4gN" Name="Draw Confidence" Kind="InputPin" />
                       <Pin Id="SQCdZzfcuhhPoZt6YAroqk" Name="Output" Kind="OutputPin" />
                     </Node>
@@ -5346,9 +5351,9 @@
                 <Pin Id="IBA5JDGLZvgOiAb9FQCdzA" Name="Confidence" Kind="OutputPin" />
               </Node>
               <Node Bounds="479,726,76,26" Id="Q3sDLFVU4hXMv5Nh5W8XCR">
-                <p:NodeReference LastCategoryFullName="YoloDotNet.Models.IDetection" LastDependency="YoloDotNet.dll">
+                <p:NodeReference LastCategoryFullName="YoloDotNet.Models.ObjectDetection" LastDependency="YoloDotNet.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="YoloDotNet.Models.IDetection" />
+                  <CategoryReference Kind="AssemblyCategory" Name="ObjectDetection" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="BoundingBox" />
                 </p:NodeReference>
                 <Pin Id="Pa0eIbS1wvRPbcsLXdZVwR" Name="Input" Kind="StateInputPin" />
@@ -5462,9 +5467,9 @@
                 <Pin Id="M5ShFQDMtIUOqX5G1DoNuV" Name="Confidence" Kind="OutputPin" />
               </Node>
               <Node Bounds="1076,742,76,26" Id="SgQ7b0IZPjUMNV9RhyPngS">
-                <p:NodeReference LastCategoryFullName="YoloDotNet.Models.IDetection" LastDependency="YoloDotNet.dll">
+                <p:NodeReference LastCategoryFullName="YoloDotNet.Models.ObjectDetection" LastDependency="YoloDotNet.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="YoloDotNet.Models.IDetection" />
+                  <CategoryReference Kind="AssemblyCategory" Name="ObjectDetection" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="BoundingBox" />
                 </p:NodeReference>
                 <Pin Id="Lq0egwOT52KOLS1jqmmG2j" Name="Input" Kind="StateInputPin" />
@@ -11138,15 +11143,15 @@
                 <Pin Id="SR4MBA6LaFbQTXAz8RGqmi" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="T5n1xPpcSzQPuXb803BC66" Name="Bounding Box" Kind="OutputPin" />
               </Node>
-              <Node Bounds="184,2126,93,26" Id="HnDBVv0S7PkL9DuVj0iSWx">
+              <Node Bounds="184,2126,105,26" Id="HnDBVv0S7PkL9DuVj0iSWx">
                 <p:NodeReference LastCategoryFullName="YoloDotNet.Models.Segmentation" LastDependency="YoloDotNet.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="Segmentation" />
-                  <Choice Kind="OperationCallFlag" Name="SegmentedPixels" />
+                  <Choice Kind="OperationCallFlag" Name="BitPackedPixelMask" />
                 </p:NodeReference>
                 <Pin Id="IuecWMuPiJvMnVoWcySEqg" Name="Input" Kind="StateInputPin" />
                 <Pin Id="LFeey2MFwJDMjqB3iNoMbM" Name="Output" Kind="StateOutputPin" />
-                <Pin Id="KQO8LyE5qsBOMB94eCN46Z" Name="Segmented Pixels" Kind="OutputPin" />
+                <Pin Id="UkHXKegR7bbQJOHeLxBDpt" Name="Bit Packed Pixel Mask" Kind="OutputPin" />
               </Node>
             </Patch>
             <ControlPoint Id="HNHhW4oBudVPkJwScW8EDc" Bounds="192,2198" Alignment="Bottom" />
@@ -11181,7 +11186,7 @@
           <Link Id="QNSubCQ9EjfMf3CtKIiI1O" Ids="T5n1xPpcSzQPuXb803BC66,EcmgaQw6COrNIz2vYJmnze" />
           <Link Id="LRjB0jQrBayNpRHqYD4vho" Ids="H2lRe14BtoOMFe35yvPEVP,FjJZaIxu7kEMFwfdmcbrgz" />
           <Link Id="S2Dwc1H9oscPY2X139AWxr" Ids="SR4MBA6LaFbQTXAz8RGqmi,IuecWMuPiJvMnVoWcySEqg" />
-          <Link Id="RJ9GIfvjWpDPcrjyIGOgwE" Ids="KQO8LyE5qsBOMB94eCN46Z,LxYxXJi9OTeMxtybyzcDFI" />
+          <Link Id="CLdfB2SBAVgPovjPUu7PJZ" Ids="UkHXKegR7bbQJOHeLxBDpt,LxYxXJi9OTeMxtybyzcDFI" />
         </Patch>
       </Node>
       <!--
@@ -12934,7 +12939,7 @@
           <Choice Kind="OperationDefinition" />
         </p:NodeReference>
         <Patch Id="SxHOunZiBZWOpaftqMMLDy">
-          <Node Bounds="620,1987,45,26" Id="IrBeRI4wMUCMzTMsQ7T74M">
+          <Node Bounds="620,1987,45,19" Id="IrBeRI4wMUCMzTMsQ7T74M">
             <p:NodeReference LastCategoryFullName="YoloDotNet.Models.Pixel" LastDependency="YoloDotNet.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="YoloDotNet" />
@@ -14574,7 +14579,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="QO8GUmpKwEKQWQ1r7K6gwY" Location="VL.Skia" Version="2025.7.0-0369-g117540fa59" />
+  <NugetDependency Id="QO8GUmpKwEKQWQ1r7K6gwY" Location="VL.Skia" Version="2025.7.0" />
   <NugetDependency Id="CJOea5Ty7WIL9xjYxaLBCl" Location="Microsoft.AI.DirectML" Version="1.15.4" />
   <PlatformDependency Id="Da0DwGJVqc2QMEDhaZWiPq" Location="./lib/YoloDotNet.dll" />
   <DocumentDependency Id="B8fDWKQqNTDPw0K811R22v" Location="./vl/DirectML_Loader.vl" />
