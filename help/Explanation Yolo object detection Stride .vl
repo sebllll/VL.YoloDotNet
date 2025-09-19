@@ -25,7 +25,7 @@
               <Choice Kind="TypeFlag" Name="Float64" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="105,252,205,19" Id="BCvUveMjQmrNm68mxL8J0t">
+          <Node Bounds="105,252,225,19" Id="BCvUveMjQmrNm68mxL8J0t">
             <p:NodeReference LastCategoryFullName="YoloDotNet" LastDependency="VL.YoloDotNet.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="YoloObjectDetectionStride (Async)" />
@@ -45,6 +45,7 @@
             <Pin Id="R3xw05guYe4M9vNvCgNIXK" Name="Texture" Kind="InputPin" />
             <Pin Id="QyxpSLZfKMGO69m1mrqVp0" Name="Restart" Kind="InputPin" />
             <Pin Id="QS55prCmf3kNjxRLNTz3JX" Name="Abort" Kind="InputPin" />
+            <Pin Id="NEu0tpKu4ZDNaUKOdweNAg" Name="Milliseconds Timeout" Kind="InputPin" />
           </Node>
           <Node Bounds="73,470,133,19" Id="RaVNAH6p5ODO76cnEratSS">
             <p:NodeReference LastCategoryFullName="YoloDotNet" LastDependency="VL.YoloDotNet.vl" OverloadStrategy="AllPinsThatAreNotCommon">
@@ -137,29 +138,6 @@
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="78,-100,105,19" Id="TZU97R2VmcJOFMhQHlkiPO">
-            <p:NodeReference LastCategoryFullName="Stride.Assets" LastDependency="VL.Stride.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="FileTexture" />
-            </p:NodeReference>
-            <Pin Id="TgqDKwD4NTMLmcTVS6tsk8" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="Byec2QfYsxKLney5T661v0" Name="Path" Kind="InputPin" />
-            <Pin Id="IBZpA8eXj4AL019Gf2ZY14" Name="Generate Mipmaps" Kind="InputPin" />
-            <Pin Id="Al0f4Oia1BiLwBTp1ieFX8" Name="Is sRGB" Kind="InputPin" IsHidden="true" />
-            <Pin Id="CkJtcEp2NNJMXYxRjcWT9N" Name="Premultiply Alpha" Kind="InputPin" />
-            <Pin Id="OywEgyDT6lPPt2EN2FuoRC" Name="Compress" Kind="InputPin" />
-            <Pin Id="OJ2jqHKqbOJNorRm50OUsS" Name="Alpha Format" Kind="InputPin" />
-            <Pin Id="LkAqvj2RDlMMJNEHv3Du13" Name="Reload" Kind="InputPin" />
-            <Pin Id="IFbVwTbsod1PEVTAnFiQyi" Name="Texture" Kind="OutputPin" />
-            <Pin Id="OML5k3vAyUaOJpojyIZJYB" Name="Is Loading" Kind="OutputPin" />
-            <Pin Id="VortnotcuaROqbWH3dpB3k" Name="Already Loaded" Kind="OutputPin" />
-            <Pin Id="MhklPsM7NvKQUK1Xr2FXrj" Name="Url" Kind="OutputPin" IsHidden="true" />
-          </Node>
-          <Pad Id="NPwHVohAL7JQTR27N1SVH3" Comment="Filename" Bounds="80,-159,140,15" ShowValueBox="true" isIOBox="true" Value="assets\Media\people.jpg">
-            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Path" />
-            </p:TypeAnnotation>
-          </Pad>
           <Pad Id="SYk6iV7XnstM9S6lYDXesv" Comment="Prime Gpu" Bounds="187,79,35,15" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
@@ -247,7 +225,6 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <ControlPoint Id="RTjHxBxBa6tQBEyccZFjL0" Bounds="269,-49" />
           <Pad Id="LpuSp8qqsreN14us95sSO3" Comment="Abort" Bounds="366,179,35,35" ShowValueBox="true" isIOBox="true" Value="false">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
@@ -270,6 +247,154 @@
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="73,-220,363,19" Id="K0vPXBKC0oSOBYrrpxZv1x">
+            <p:NodeReference LastCategoryFullName="Devices.IDS" LastDependency="VL.Devices.IDS.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="VideoIn" />
+            </p:NodeReference>
+            <Pin Id="VGhhvfSsvFyQHc4CeAlBSo" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="BN7J5XR1Ho5NjzSnJXwX09" Name="Device" Kind="InputPin" />
+            <Pin Id="TB7da8yE2UbOpNhv6ZJAnn" Name="Resolution" Kind="InputPin" />
+            <Pin Id="Qha4dmSTt3zPbrmxsKmw9m" Name="FPS" Kind="InputPin" />
+            <Pin Id="QlSxzSI6CfILUAAlQkw6tu" Name="Output" Kind="OutputPin" />
+            <Pin Id="OrTpYgrI130LRzpk2RbQIT" Name="Info" Kind="OutputPin" />
+            <Pin Id="D1F2OWoCyBSPMgKwMYK8aF" Name="Configuration" Kind="InputPin" />
+            <Pin Id="SreyXKMSHKSOMEX0oYDD2T" Name="UserSet" Kind="InputPin" />
+            <Pin Id="NdBi2uBCSNSObQNz23NXOG" Name="Correct Hot Pixels" Kind="InputPin" IsHidden="true" />
+            <Pin Id="AU0JYWOPZC8PHDbgrZN6mq" Name="Enabled" Kind="InputPin" />
+          </Node>
+          <Pad Id="Po5kSdvaxGSOEXUnm3qVsR" Comment="Device" Bounds="75,-590,367,15" ShowValueBox="true" isIOBox="true" Value="IDS Imaging Development Systems GmbH-U3-368xXCP-NIR/4108825140">
+            <p:TypeAnnotation LastCategoryFullName="Devices.IDS" LastDependency="VL.Devices.IDS.vl">
+              <Choice Kind="TypeFlag" Name="IDSDevice" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="JUgwLufYzNrP5337tW7xXb" Comment="FPS" Bounds="219,-269,35,15" ShowValueBox="true" isIOBox="true" Value="46">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="MqjV7wTaXqbMhMEV7W51Gj" Comment="Info" Bounds="433,-160,572,77" ShowValueBox="true" isIOBox="true" Value="Max. resolution (w x h): 768 x 576&#xD;&#xA;Min. resolution (w x h): 16 x 120&#xD;&#xA;Current resolution (w x h): 768 x 576&#xD;&#xA;Framerate range: [5.171219063181955, 34.78865889719951], current FPS: 30.00930288389401&#xD;&#xA;&#xD;&#xA;DeviceClockSelector (Enumeration) Description: Returns the source for DeviceClockFrequency.&#xD;&#xA;DeviceClockFrequency (Float) Description: Controls the frequency of the clock (in Hertz) selected in DeviceClockSelector. Changing DeviceClockFrequency also changes ExposureTime and AcquisitionFrameRate.&#xA;                For camera models with a discrete list of valid values, where the increment between two valid values is non-constant, the implementation will choose a suitable setting based on the desired value, the current value, and the list of valid values.&#xA;            &#xD;&#xA;BinningSelector (Enumeration) Description: Selects which binning engine is controlled by the BinningHorizontal and BinningVertical features.&#xD;&#xA;BinningHorizontalMode (Enumeration) Description: Pixel combination mode when BinningHorizontal is active.&#xD;&#xA;BinningVerticalMode (Enumeration) Description: Pixel combination mode when BinningVertical is active.&#xD;&#xA;DecimationSelector (Enumeration) Description: Selects which decimation engine is controlled by the DecimationHorizontal and DecimationVertical features.&#xD;&#xA;DecimationHorizontalMode (Enumeration) Description: Mode used to reduce the horizontal resolution when DecimationHorizontal is used.&#xD;&#xA;DecimationVerticalMode (Enumeration) Description: Mode used to reduce the vertical resolution when DecimationVertical is used.&#xD;&#xA;ReverseX (Boolean) Description: Flip horizontally the image sent by the device.&#xD;&#xA;ReverseY (Boolean) Description: Flip vertically the image sent by the device.&#xD;&#xA;TestPattern (Enumeration) Description: Selects the type of test pattern that is generated by the device as image source.&#xD;&#xA;AcquisitionFrameRate (Float) Description: Controls the acquisition rate (in Hertz) at which the images are captured. The value and range of AcquisitionFrameRate depend on the current value of DeviceClockFrequency.&#xD;&#xA;TriggerSelector (Enumeration) Description: Selects the type of trigger to configure.&#xD;&#xA;ExposureMode (Enumeration) Description: Sets the exposure mode automatically depending on the trigger mode.&#xD;&#xA;ExposureTime (Float) Description: Sets the Exposure time when ExposureMode is Timed and ExposureAuto is Off. This controls the duration where the photosensitive cells are exposed to light. The value and range of ExposureTime depend on the current value of DeviceClockFrequency. If you increase AcquisitionFrameRate and its new value is not applicable with the value of ExposureTime, ExposureTime will be reduced automatically. If you decrease AcquisitionFrameRate again, ExposureTime stays low and must be manually increased to the desired value.&#xD;&#xA;GainSelector (Enumeration) Description: Selects the Gain to be configured. The gains supported by a camera depend on the sensor and may differ.&#xD;&#xA;Gain (Float) Description: Controls the gain selected in GainSelector. The gain is an amplification factor applied to all pixel values. Increasing gain, the image will appear brighter. For best image quality, it is recommended to use small gain values and to increase ExposureTime instead. The gain step width depends on the sensor. For manually adjusting the white balance for color cameras, select a color gain with GainSelector and change the Gain value.&#xD;&#xA;BlackLevelSelector (Enumeration) Description: Returns which BlackLevel is controlled by the black level features.&#xD;&#xA;BlackLevel (Float) Description: Controls the black level selected in BlackLevelSelector. The BlackLevel is an offset that applies to all pixel values. BlackLevel always refers to 8 bit depth.&#xD;&#xA;ColorCorrectionMode (Enumeration) Description: Controls if the color correction is active. Color correction is only available, if the selected Pixel Format is a debayered color format. If color correction is active, the Color Correction Matrix is used to enhance color rendering.&#xD;&#xA;ColorCorrectionMatrix (Enumeration) Description: Sets the matrix for color correction. Color correction can be enabled or disabled using Color Correction Mode.&#xD;&#xA;ColorCorrectionMatrixValueSelector (Enumeration) Description: Defines which multiplier (red, green, blue) to use for the given pixel color.&#xD;&#xA;ColorCorrectionStatus (Enumeration) Description: Returns the status of the color correction mode (Color Correction is available for coloured sensors in debayered pixel format only).&#xD;&#xA;HotpixelCorrectionMode (Enumeration) Description: The correction is performed by the software. The hot pixel list is stored in the camera's non-volatile camera memory.&#xD;&#xA;FlashStartDelay (Float) Description: Sets the delay (in microseconds) for the start of the &quot;FlashActive&quot; signal. The delay is relative to the reference signal set in FlashReference.&#xD;&#xA;FlashReference (Enumeration) Description: Selects the internal signal that will be the source to start the &quot;FlashActive&quot; signal.&#xD;&#xA;LineSelector (Enumeration) Description: Selects the physical line (or pin) of the I/O to configur or the virtual  line of the Transport Layer to configure.&#xD;&#xA;UserOutputSelector (Enumeration) Description: Selects which bit of the User Output register will be set by UserOutputValue.&#xD;&#xA;UserOutputValue (Boolean) Description: Sets the value of the bit selected by UserOutputSelector.&#xD;&#xA;UserOutputValueAll (Integer) Description: Sets the values of all bits of the User Output register. It is subject to the UserOutputValueAllMask.&#xD;&#xA;UserOutputValueAllMask (Integer) Description: Sets the write mask to apply to the value specified by UserOutputValueAll before writing it in the User Output register. If the UserOutputValueAllMask feature is present, setting the user Output register using UserOutputValueAll will only change the bits that have a corresponding bit in the mask set to one.&#xD;&#xA;UserSetSelector (Enumeration) Description: Selects the user set that has to be loaded, saved or configured. Loading a user set can affect the availability and behavior of multiple camera features.&#xD;&#xA;UEyeParametersetPath (String) Description: Filepath to uEye parameterset (.ini) file, which to load/save.&#xD;&#xA;FileAccessBuffer (Register) Description: Defines the intermediate access buffer that allows the exchange of data between the camera file storage and the application. This register mapped FileAccessBuffer must be written with the target data before executing a write operation. For read operation, the data can be read from the FileAccessBuffer after the read operation has been executed. The effective data transfer is done upon FileOperationExecute execution. The maximum length of FileAccessBuffer depends on the camera hardware.&#xD;&#xA;TLParamsLocked (Integer) Description: Used by the Transport Layer to prevent critical features changes during acquisition.&#xD;&#xA;" />
+          <Pad Id="NoxfNsrnRFZOdMwJaW5QM7" Comment="Resolution" Bounds="147,-305,42,28" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Int2" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="146,-445,57,19" Id="T2Eum8FHsGFNBOdNwJhsWj">
+            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Quantize" />
+            </p:NodeReference>
+            <Pin Id="A0Pxd7mXNASPxFVVlnP2Xr" Name="Input" Kind="InputPin" />
+            <Pin Id="E4dcoidBNKeNL8sbbr1oFc" Name="Step Size" Kind="InputPin" />
+            <Pin Id="M7dcr61Ode0LjtsIMwCDjw" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="IXWjdfW78YkPzyKvtDaBk7" Comment="" Bounds="148,-508,35,28" ShowValueBox="true" isIOBox="true" Value="1296, 826">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Vector2" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:precision p:Type="Int32">0</p:precision>
+              <p:stepsize p:Type="Single">1</p:stepsize>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Kcgz3fuD2NbLkbF4KyMfcC" Comment="" Bounds="200,-476,35,28" ShowValueBox="true" isIOBox="true" Value="12, 2">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Vector2" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:precision p:Type="Int32">0</p:precision>
+              <p:stepsize p:Type="Single">1</p:stepsize>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="146,-401,34,26" Id="QB8GaQ473d9LS3aWQW6skb">
+            <p:NodeReference LastCategoryFullName="Primitive.Int2" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Int2 (Create Vector2)" />
+            </p:NodeReference>
+            <Pin Id="H6TFVpHqTd7PsIRb9GbZbC" Name="Value" Kind="InputPin" />
+            <Pin Id="OukEeYSJZSoPvR9FaXDHRu" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="MdwduMuBTffPYlvLzL592g" Comment="Enabled" Bounds="433,-261,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SoqVw4xr5RJP1XjqHe9MGK" Comment="UserSet" Bounds="361,-280,117,15" ShowValueBox="true" isIOBox="true" Value="UserSet0">
+            <p:TypeAnnotation LastCategoryFullName="Devices.IDS.Enumerations" LastDependency="VL.Devices.IDS.vl">
+              <Choice Kind="TypeFlag" Name="UserSetSelector" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="73,-130,119,19" Id="PX9JFMVwu3rOGxm8MF0Qhw">
+            <p:NodeReference LastCategoryFullName="Stride.Video" LastDependency="VL.Stride.Runtime.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="VideoSourceToTexture" />
+            </p:NodeReference>
+            <Pin Id="HeJ5yAgNzL7LG7KgLXw9DH" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="KcibTwMhJluN61N1LnO9Ou" Name="Input" Kind="InputPin" />
+            <Pin Id="TAPqh8RlH3wMWPkW5gDHVz" Name="Fallback" Kind="InputPin" />
+            <Pin Id="QwHGlVY72yGPd87PUgRYDm" Name="Prefer Push" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="GH0WEnmtAVePyAKrGUdyPL" Name="Prefer Gpu" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="RPEwxD35HG2LnAKZuDnvTp" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="QdTsR20UMpHQSWBQLb4gGz" Comment="Update" Bounds="133,-180,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="53,-100,145,19" Id="ExY732PclVSQVnPMGXNObB">
+            <p:NodeReference LastCategoryFullName="Stride.Rendering" LastDependency="VL.Stride.Runtime.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FullscreenQuadRenderer" />
+            </p:NodeReference>
+            <Pin Id="HTBEfMdLbAqLylUldZVO05" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Ao44iBwepROLQy9G2BeBCd" Name="Transformation" Kind="InputPin" />
+            <Pin Id="LtoQdPV9RBBOB7aLhtIjrf" Name="Texture" Kind="InputPin" />
+            <Pin Id="QpVyu5n3Y9ELitiKQRsjvg" Name="Sampler" Kind="InputPin" />
+            <Pin Id="KqM40xQZBuBOLLGJ8VPnX2" Name="Sample Mode" Kind="InputPin" />
+            <Pin Id="RokXXE9w9qcQEijqNZndMX" Name="Blend State" Kind="InputPin" />
+            <Pin Id="N4CJ2rZwdEpM5hvbamvUez" Name="Color" Kind="InputPin" />
+            <Pin Id="JGpJKpYjGgpPrYes0vNfGL" Name="Rasterizer State" Kind="InputPin" />
+            <Pin Id="LenEiQ3kQE4O2KshqG6b2X" Name="Depth Stencil State" Kind="InputPin" />
+            <Pin Id="OpjQ9prX0FqNK4cUjp5WQt" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="53,-71,125,19" Id="OlV7DTLbC31MFmO1Jtfrxd">
+            <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.Runtime.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="RenderTexture" />
+            </p:NodeReference>
+            <Pin Id="G7P4t9lzl7QLAzptFU2g1y" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="LyfTH3MOuoqP5CoQV2d6Kp" Name="Input" Kind="InputPin" />
+            <Pin Id="P190PA9kemqPxF2gma5g7w" Name="Size" Kind="InputPin" />
+            <Pin Id="AdqrsR6lxjtNqbTqRZZIKL" Name="Render View" Kind="InputPin" />
+            <Pin Id="H8MgLwqOqoCMzgAW9yYlot" Name="Format" Kind="InputPin" />
+            <Pin Id="KCqajgfhHvdLKKudSvhQH4" Name="Color Shared" Kind="InputPin" IsHidden="true" />
+            <Pin Id="AcDNP7uIuQrQUDF6thJBZj" Name="Depth Format" Kind="InputPin" />
+            <Pin Id="FNllnQW6NFPP6XrnaWDMeT" Name="Depth Shared" Kind="InputPin" IsHidden="true" />
+            <Pin Id="L0B7ZOeByGtLjCGYPqtx7R" Name="Clear Flags" Kind="InputPin" IsHidden="true" />
+            <Pin Id="NbiiGFuptt2QKlVK8l5uQU" Name="Clear Color" Kind="InputPin" />
+            <Pin Id="Gufknz1ZUppOxBcERoHruE" Name="Clear Depth" Kind="InputPin" IsHidden="true" />
+            <Pin Id="T01nJejGr8NMccEyBleT6K" Name="Clear Stencil" Kind="InputPin" IsHidden="true" />
+            <Pin Id="CwjWXa2TS0lMeIESGf1VtZ" Name="Clear" Kind="InputPin" />
+            <Pin Id="LsjoBUPwxicParR6iJZzsg" Name="Layer" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="KQfNtmINEEsPckVgygYXIW" Name="Color" Kind="OutputPin" />
+            <Pin Id="ShpdqlXetC7NYQvsPPXWIj" Name="Depth" Kind="OutputPin" />
+            <Pin Id="PTZ74rTdRv0LkuODEkfrL4" Name="Auto Render" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="RLI4kpznqPoLCcNBLcOAMP" Bounds="198,-77,330,20" ShowValueBox="true" isIOBox="true" Value="&lt;-- makes the ReadBackTexture warning go away..">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
         </Canvas>
@@ -299,22 +424,34 @@
         <Link Id="FMs74glqf26OezPC2LgPEC" Ids="C8XbK0ewFaNPLESBHz4ZJZ,BcD6cGEpueYMFGlGWExiOn" />
         <Link Id="B6afzsG6PC9MNEVwtRhvnb" Ids="DWvuTaHmk5mMdfmFz8D3PK,DeU4x8tGPwGNR965wAgCDi" />
         <Link Id="KuzAFth624EMTd0IGLHgtK" Ids="EpfhOzBK3dLOlRmgx9uNHJ,OgWEW9SZhzwPBgA8C0ano0" />
-        <Link Id="LV1uDltFDWlPDDtTk9ii4W" Ids="NPwHVohAL7JQTR27N1SVH3,Byec2QfYsxKLney5T661v0" />
         <Link Id="RaQvpLHTB54PBwLiAgXE4u" Ids="SYk6iV7XnstM9S6lYDXesv,OTIWSfznfuQNdJi6Z3XiMR" />
         <Link Id="DpCCAD85SaZNb0X64hK7M3" Ids="NlMbZupfF0JNrae5kvWnEb,TDeK27M3lGeOnXphwVQ7oc" />
         <Link Id="F9C9PJ1h6xbOjSN3H9uE0X" Ids="QKMXAJuSHrLLTlKg05Epxy,HjOVO5uOqJoPiQoGkzpJG2" />
         <Link Id="BVShn3Gy3A0PPReHVP6d3t" Ids="O0O6N7CceTQOJZvM91d4c9,QJK8bb39vfoOZK3m3Yan8F" />
         <Link Id="SbQ8p6y2wx6MUjpTSnDxlU" Ids="PjnKKjwc3uONpc0xx9ouUk,KBJhkphn7t4O0NZ9kIXhHI" />
         <Link Id="BlKzfmCxnKhQWt5e5OeUYu" Ids="K8cAH2JwyWaORwMoHsdo5A,CeES9arDFbWLVBrfI67yQv" />
-        <Link Id="Rp8I82wvgg9MYURYcsjXlV" Ids="IFbVwTbsod1PEVTAnFiQyi,EuHiZylHN5rQGsHAzf7NNR" />
         <Link Id="DLa726LN6aEPNcYhMqW3U1" Ids="SfCSPR4RfFDLU10NdutSgi,AWJ5BOIz6B0MpY2X4wC4gK" />
         <Link Id="AAK9hAWsFeyLojGqPqFpF7" Ids="DXdyRVzOvp9L8ehrX2cIBS,ETXdhMpE74dNKvNGj1l0Uh" />
-        <Link Id="MlojhuLiRiuNqx69G1Szez" Ids="IFbVwTbsod1PEVTAnFiQyi,RTjHxBxBa6tQBEyccZFjL0,R3xw05guYe4M9vNvCgNIXK" />
         <Link Id="Ao8oopNIEb9LURY8YCd1L5" Ids="FHz4ICWj1SXMYr9mcV4Cci,QyxpSLZfKMGO69m1mrqVp0" />
         <Link Id="T7qrsI4RwY7N9iDMDeOQPl" Ids="FP7L23Ijb7LQWq79LOtSTV,HibBc5wZQahNqL5G4J9aGP" />
         <Link Id="A44q8npEbeDQXIjEG3rdQx" Ids="LpuSp8qqsreN14us95sSO3,QS55prCmf3kNjxRLNTz3JX" />
         <Link Id="MN4b00d81fBMVNhyNXIwOA" Ids="Kn7bQLh9i7rQcXjJzEmtWp,UYRszMK2knRMzY71pagbAf" />
         <Link Id="BpOYal0ww1KLaTQ56apr6Z" Ids="RAQHm4BWzRENVPWrlvEu6n,EYi8JP7Vl69Pd5E8nypG3X" />
+        <Link Id="B8BLmZL04WfMhJIxw4NBbp" Ids="Po5kSdvaxGSOEXUnm3qVsR,BN7J5XR1Ho5NjzSnJXwX09" />
+        <Link Id="CrtTayKG2NSL5KDDdwTSys" Ids="OrTpYgrI130LRzpk2RbQIT,MqjV7wTaXqbMhMEV7W51Gj" />
+        <Link Id="TWzKAZG4utmLSSMDfK4SQf" Ids="JUgwLufYzNrP5337tW7xXb,Qha4dmSTt3zPbrmxsKmw9m" />
+        <Link Id="JcPxQyqJPixLuCCEZQ6pQ9" Ids="IXWjdfW78YkPzyKvtDaBk7,A0Pxd7mXNASPxFVVlnP2Xr" />
+        <Link Id="Uk7kJ4BNF27O8ka5V18pGO" Ids="Kcgz3fuD2NbLkbF4KyMfcC,E4dcoidBNKeNL8sbbr1oFc" />
+        <Link Id="PyN2gErCTDhQSVxVW3tvi1" Ids="M7dcr61Ode0LjtsIMwCDjw,H6TFVpHqTd7PsIRb9GbZbC" />
+        <Link Id="L7CLD939T9VQLO6qWxDkQO" Ids="MdwduMuBTffPYlvLzL592g,AU0JYWOPZC8PHDbgrZN6mq" />
+        <Link Id="TKhyCxbxCsPMHfk49bcb87" Ids="OukEeYSJZSoPvR9FaXDHRu,NoxfNsrnRFZOdMwJaW5QM7" />
+        <Link Id="Oz6uLblcZEiPGN9BAie9Kk" Ids="SoqVw4xr5RJP1XjqHe9MGK,SreyXKMSHKSOMEX0oYDD2T" />
+        <Link Id="BTT83eAaCVBPzdv3kTcFz3" Ids="NoxfNsrnRFZOdMwJaW5QM7,TB7da8yE2UbOpNhv6ZJAnn" />
+        <Link Id="Pv9LcNScgK3MNTYaUQYsfy" Ids="QlSxzSI6CfILUAAlQkw6tu,KcibTwMhJluN61N1LnO9Ou" />
+        <Link Id="KNJNtg7ycQcPKY3VH00kVm" Ids="RPEwxD35HG2LnAKZuDnvTp,LtoQdPV9RBBOB7aLhtIjrf" />
+        <Link Id="CzHnWpkmyCbMgKhAswNBBc" Ids="OpjQ9prX0FqNK4cUjp5WQt,LyfTH3MOuoqP5CoQV2d6Kp" />
+        <Link Id="Mk9xZ6l28ViPcLhu59vcJM" Ids="KQfNtmINEEsPckVgygYXIW,R3xw05guYe4M9vNvCgNIXK" />
+        <Link Id="QOqpZk4PhjFLBB3B6ON6QT" Ids="KQfNtmINEEsPckVgygYXIW,EuHiZylHN5rQGsHAzf7NNR" />
       </Patch>
     </Node>
   </Patch>
@@ -323,4 +460,5 @@
   <NugetDependency Id="NgRVJBqupcJLhXcZSIUvFY" Location="VL.YoloDotNet" Version="0.0.0" />
   <NugetDependency Id="TylRTFgJ3trO4khcn22meK" Location="VL.Stride" Version="2025.7.0" />
   <NugetDependency Id="FDaUyER2hm3O7p5UJOyDcy" Location="VL.Stride.Runtime" Version="2025.7.0" />
+  <NugetDependency Id="IZxmZuZBuWxQEcJjbvTaSt" Location="VL.Devices.IDS" Version="1.1.0" />
 </Document>
