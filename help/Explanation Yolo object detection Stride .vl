@@ -28,7 +28,7 @@
           <Node Bounds="105,252,205,19" Id="BCvUveMjQmrNm68mxL8J0t">
             <p:NodeReference LastCategoryFullName="YoloDotNet" LastDependency="VL.YoloDotNet.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="YoloObjectDetection (Async)" />
+              <Choice Kind="ProcessAppFlag" Name="YoloObjectDetectionStride (Async)" />
             </p:NodeReference>
             <Pin Id="DX9nr2su8vqQU1PjLLZn7M" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="OgWEW9SZhzwPBgA8C0ano0" Name="Model Path" Kind="InputPin" />
