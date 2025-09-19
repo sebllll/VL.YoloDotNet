@@ -1,4 +1,4 @@
 [submodule "src/YoloDotNet"]
 	path = src/YoloDotNet
-	url = https://github.com/dani217s/YoloDotNet.git
+	url = git@github.com:sebllll/YoloDotNet.git
 	branch = develop-directml
