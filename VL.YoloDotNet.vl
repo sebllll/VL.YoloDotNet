@@ -925,7 +925,7 @@
           <Patch Id="MS8BT5zJxe5Mh5wTiAWxh0">
             <Canvas Id="VocQDKUjkY4OLxcfLnAuHM" CanvasType="Group">
               <ControlPoint Id="KAjtjWZ8AU4NnLT8OYAfa4" Bounds="546,250" />
-              <Node Bounds="521,285,453,765" Id="N4Md4ddZacoL96UoJHwBv9">
+              <Node Bounds="521,294,525,756" Id="N4Md4ddZacoL96UoJHwBv9">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
@@ -1058,7 +1058,7 @@
                         <ControlPoint Id="NwQnTBhuBWqOHJmPnZmRPp" Bounds="842,675" Alignment="Bottom" />
                         <ControlPoint Id="VIhHwGp9Q0MMIxUuEmTBfl" Bounds="855,610" Alignment="Top" />
                       </Node>
-                      <Node Bounds="729,641,37,19" Id="NuzCw0zMTTOLkWT8J7AhEK">
+                      <Node Bounds="767,610,37,19" Id="NuzCw0zMTTOLkWT8J7AhEK">
                         <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="NOT" />
@@ -1079,12 +1079,13 @@
                     <Pin Id="MhG2jtMzW4eOtRzdBnctJW" Name="Exists" Kind="OutputPin" />
                   </Node>
                 </Patch>
-                <ControlPoint Id="EyLVJtUfKDFMg0pFbvwCWA" Bounds="546,291" Alignment="Top" />
+                <ControlPoint Id="EyLVJtUfKDFMg0pFbvwCWA" Bounds="546,300" Alignment="Top" />
                 <ControlPoint Id="Lgs8eYOuctAN2o07MME0op" Bounds="568,1044" Alignment="Bottom" />
-                <ControlPoint Id="EJMiXj47p0LMODz5ZWPOdE" Bounds="837,291" Alignment="Top" />
-                <ControlPoint Id="JLxxuy578DlLdkiVraOFGg" Bounds="936,291" Alignment="Top" />
-                <ControlPoint Id="SGP7vtBqqZ4PMYUIQHxdbx" Bounds="732,291" Alignment="Top" />
-                <ControlPoint Id="Q8AYoDuB55gNSJUdFOowl7" Bounds="651,291" Alignment="Top" />
+                <ControlPoint Id="EJMiXj47p0LMODz5ZWPOdE" Bounds="837,300" Alignment="Top" />
+                <ControlPoint Id="JLxxuy578DlLdkiVraOFGg" Bounds="936,300" Alignment="Top" />
+                <ControlPoint Id="SGP7vtBqqZ4PMYUIQHxdbx" Bounds="732,300" Alignment="Top" />
+                <ControlPoint Id="Q8AYoDuB55gNSJUdFOowl7" Bounds="651,300" Alignment="Top" />
+                <ControlPoint Id="JIW2UEWoUaOPc4RexredMs" Bounds="1031,300" Alignment="Top" />
               </Node>
               <ControlPoint Id="RSKBxUmAwYbNEwGomsvzdN" Bounds="837,250" />
               <ControlPoint Id="NZz0hyhprgVM8mlmbzVZ0g" Bounds="568,1110" />
@@ -1179,15 +1180,16 @@
             <Link Id="L5jBDAF50C6ObmVOiPcnMC" Ids="QA8OfLtbm3ALT9xPUrYKAy,JLxxuy578DlLdkiVraOFGg" />
             <Link Id="C0UJKdvmS1NPIVcckjuM85" Ids="IRJXdLSolrMOL0ktXpnc1q,QA8OfLtbm3ALT9xPUrYKAy" IsHidden="true" />
             <Link Id="DO6VOuDM1abM3chAIJ6zCJ" Ids="FlPrxLhjjq7MP6FhofBeB8,Qx4hK3o3UU5MaiRVGYd11H" IsHidden="true" />
-            <Link Id="OJArUh2BCOhOaxwVbA7fAR" Ids="Qx4hK3o3UU5MaiRVGYd11H,LiGK2ilWa54NLcprZuoXK7" />
             <Link Id="IjPnPrbEn2vQcAYZQfXhFj" Ids="VIhHwGp9Q0MMIxUuEmTBfl,NwQnTBhuBWqOHJmPnZmRPp" IsFeedback="true" />
             <Link Id="Qz7hXQg9N0qQVWf1sCcpRG" Ids="NV6HEjPd5d7P3NgAVrh8x0,NwQnTBhuBWqOHJmPnZmRPp" />
             <Link Id="OAQELEPTgJHPtUSTvOvmqX" Ids="CC0PyrgeZ6uLshzlv9vp38,LjR2BxAet7bMDOjmrRKISb" IsFeedback="true" />
             <Link Id="DDf4XxwdsceQEO743qi7r9" Ids="NwQnTBhuBWqOHJmPnZmRPp,CC0PyrgeZ6uLshzlv9vp38" />
             <Link Id="EPdlj0SO9HyPWsuKUPNYHu" Ids="JZi4zjibVaHPujo2NXu1VJ,LjR2BxAet7bMDOjmrRKISb" />
-            <Link Id="EtmGDOp1uXPQTiTeaTakl9" Ids="Qx4hK3o3UU5MaiRVGYd11H,PXcFyEg4mxQOQyyeuiwzRt" />
             <Link Id="NnVE0aCbPY0LJUeUXDXDE4" Ids="Qpb2ed3iMoqM2D4h2MKKZl,AvZIyblGi3vMObsnAPy5o3" />
             <Link Id="LDR0FXHC7bQMaeS2rpsizR" Ids="LjR2BxAet7bMDOjmrRKISb,EnZT3o5xejKOlYCRNcueNS" />
+            <Link Id="KphG5KSkIddOscWb9ZZLI9" Ids="Qx4hK3o3UU5MaiRVGYd11H,JIW2UEWoUaOPc4RexredMs" />
+            <Link Id="A1bd09IXwcYOrm7ABp58Z1" Ids="JIW2UEWoUaOPc4RexredMs,LiGK2ilWa54NLcprZuoXK7" />
+            <Link Id="S0hzArWX8CWOl0g3vB11fW" Ids="JIW2UEWoUaOPc4RexredMs,PXcFyEg4mxQOQyyeuiwzRt" />
           </Patch>
         </Node>
         <!--
@@ -13449,7 +13451,7 @@
               <Pin Id="HAH6BacbWtiL4swXRadaDo" Name="Output" Kind="OutputPin" />
               <Pin Id="DLyMRhmnbfZNvYUnlOgR9z" Name="Force" Kind="InputPin" />
             </Node>
-            <Node Bounds="337,245,86,19" Id="Qbq0zAHHmC7MEr4uDa13cr">
+            <Node Bounds="337,270,105,19" Id="Qbq0zAHHmC7MEr4uDa13cr">
               <p:NodeReference LastCategoryFullName="Main" LastDependency="22-07-05_000_VL.YoloDotNet-2.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="BuildYoloModel" />
@@ -13536,7 +13538,7 @@
     ************************ YoloSegmentationTask (Internal) ************************
 
 -->
-            <Node Name="YoloSegmentationTask (Internal)" Bounds="1262,732,324,455" Id="VF9gfMBPkgmOVKfjgIGfuj">
+            <Node Name="YoloSegmentationTask (Internal)" Bounds="1262,732,325,455" Id="VF9gfMBPkgmOVKfjgIGfuj">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" />
               </p:NodeReference>
@@ -13762,8 +13764,9 @@
             </Pad>
             <ControlPoint Id="J8HStw6jrHhQIMF3E9FEKD" Bounds="359,170" />
             <ControlPoint Id="MmEsHx4EfojNl5ynNUw870" Bounds="379,190" />
-            <ControlPoint Id="Lv9zuWGPOxHPqRln5WlzaX" Bounds="420,230" />
+            <ControlPoint Id="Lv9zuWGPOxHPqRln5WlzaX" Bounds="419,230" />
             <ControlPoint Id="MxHcAMbhRkgOkTzihMzfn9" Bounds="829,190" />
+            <ControlPoint Id="QGB9cxrXGcOOMVfrxzlqLw" Bounds="439,250" />
           </Canvas>
           <Patch Id="GMfyMyTNSWrMxapyLhqdA6" Name="Create" />
           <Patch Id="PVVPefjREKLN9ZZ8GR6vDQ" Name="Update" ManuallySortedPins="true">
@@ -13792,6 +13795,7 @@
             <Pin Id="JyiJnw60i71OlvQuD2JILt" Name="FilterQuality" Kind="InputPin" />
             <Pin Id="OvbQe5bBGI6MigKR6rS5QG" Name="Prime Gpu" Kind="InputPin" />
             <Pin Id="NLivH2t6oyLORKPtp6aGSt" Name="Pixel Confidence" Kind="InputPin" />
+            <Pin Id="Ebij9szNrXGLEq77d1zBAJ" Name="Use GPU" Kind="InputPin" />
           </Patch>
           <ProcessDefinition Id="FoakjElwnCZMhjDYjKIHHb">
             <Fragment Id="FTRt1cXmsllMHp9fwlSHUX" Patch="GMfyMyTNSWrMxapyLhqdA6" Enabled="true" />
@@ -13865,6 +13869,8 @@
           <Link Id="SSV87KUnmNAMX5YKOM1eW2" Ids="OvbQe5bBGI6MigKR6rS5QG,Lv9zuWGPOxHPqRln5WlzaX" IsHidden="true" />
           <Link Id="IM5cSB3KHTYNdv7Wx0Dch6" Ids="MxHcAMbhRkgOkTzihMzfn9,L3yv9kD5VFPN8FaBEqllY9" />
           <Link Id="TWmLVo4euykOjE9NC99f7V" Ids="NLivH2t6oyLORKPtp6aGSt,MxHcAMbhRkgOkTzihMzfn9" IsHidden="true" />
+          <Link Id="NWGqW80Md1lNksxoos5CQc" Ids="QGB9cxrXGcOOMVfrxzlqLw,BdUaerPucdwN8YmX60pmBt" />
+          <Link Id="HbEjzaHyk5RLmyfIwPd81a" Ids="Ebij9szNrXGLEq77d1zBAJ,QGB9cxrXGcOOMVfrxzlqLw" IsHidden="true" />
         </Patch>
       </Node>
       <!--
