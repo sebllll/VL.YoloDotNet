@@ -11,7 +11,7 @@
           "Microsoft.ML.OnnxRuntime.Gpu": "1.22.1",
           "SkiaSharp": "2.88.8",
           "Stride.Graphics": "4.2.0.2121",
-          "VL.CoreLib": "2025.7.0-0369-g117540fa59"
+          "VL.CoreLib": "2025.7.0"
         },
         "runtime": {
           "YoloDotNet.dll": {}
@@ -72,22 +72,22 @@
           }
         }
       },
-      "Microsoft.Extensions.DependencyInjection/8.0.0": {
+      "Microsoft.Extensions.DependencyInjection/8.0.1": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
+            "fileVersion": "8.0.1024.46610"
           }
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
+            "fileVersion": "8.0.1024.46610"
           }
         }
       },
@@ -103,27 +103,27 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging/8.0.0": {
+      "Microsoft.Extensions.Logging/8.0.1": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "8.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Options": "8.0.0"
+          "Microsoft.Extensions.DependencyInjection": "8.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
+          "Microsoft.Extensions.Options": "8.0.2"
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.Logging.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
+            "fileVersion": "8.0.1024.46610"
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.0": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
+            "fileVersion": "8.0.1325.6609"
           }
         }
       },
@@ -135,15 +135,15 @@
           }
         }
       },
-      "Microsoft.Extensions.Options/8.0.0": {
+      "Microsoft.Extensions.Options/8.0.2": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
           "Microsoft.Extensions.Primitives": "8.0.0"
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.Options.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
+            "fileVersion": "8.0.224.6711"
           }
         }
       },
@@ -584,14 +584,6 @@
           "lib/net6.0/Silk.NET.SDL.dll": {
             "assemblyVersion": "2.20.0.0",
             "fileVersion": "2.20.0.0"
-          }
-        }
-      },
-      "SixLabors.Fonts/1.0.0-beta19": {
-        "runtime": {
-          "lib/netcoreapp3.1/SixLabors.Fonts.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -1530,12 +1522,12 @@
           }
         }
       },
-      "VL.Core/2025.7.0-0369-g117540fa59": {
+      "VL.Core/2025.7.0": {
         "dependencies": {
           "CommunityToolkit.HighPerformance": "8.2.2",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Logging": "8.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Logging": "8.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3",
           "Microsoft.Extensions.ObjectPool": "8.0.0",
           "NuGet.Versioning": "6.12.1",
           "Stride.Core.Mathematics": "4.2.0.2293",
@@ -1548,35 +1540,34 @@
         "runtime": {
           "lib/net8.0/VL.Core.dll": {
             "assemblyVersion": "2025.7.0.0",
-            "fileVersion": "2025.7.0.0"
+            "fileVersion": "2025.7.0.1"
           }
         }
       },
-      "VL.CoreLib/2025.7.0-0369-g117540fa59": {
+      "VL.CoreLib/2025.7.0": {
         "dependencies": {
           "MathNet.Numerics": "5.0.0",
           "Newtonsoft.Json": "13.0.3",
-          "SixLabors.Fonts": "1.0.0-beta19",
           "System.IO.Ports": "8.0.0",
           "System.Text.Json": "8.0.5",
-          "VL.Core": "2025.7.0-0369-g117540fa59",
-          "VL.Serialization.Raw": "2025.7.0-0369-g117540fa59"
+          "VL.Core": "2025.7.0",
+          "VL.Serialization.Raw": "2025.7.0"
         },
         "runtime": {
           "lib/net8.0/VL.CoreLib.dll": {
             "assemblyVersion": "2025.7.0.0",
-            "fileVersion": "2025.7.0.0"
+            "fileVersion": "2025.7.0.1"
           }
         }
       },
-      "VL.Serialization.Raw/2025.7.0-0369-g117540fa59": {
+      "VL.Serialization.Raw/2025.7.0": {
         "dependencies": {
-          "VL.Core": "2025.7.0-0369-g117540fa59"
+          "VL.Core": "2025.7.0"
         },
         "runtime": {
           "lib/net8.0/VL.Serialization.Raw.dll": {
             "assemblyVersion": "2025.7.0.0",
-            "fileVersion": "2025.7.0.0"
+            "fileVersion": "2025.7.0.1"
           }
         }
       },
@@ -1656,19 +1647,19 @@
       "path": "microsoft.extensions.configuration.abstractions/8.0.0",
       "hashPath": "microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyInjection/8.0.0": {
+    "Microsoft.Extensions.DependencyInjection/8.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-V8S3bsm50ig6JSyrbcJJ8bW2b9QLGouz+G1miK3UTaOWmMtFwNNNzUf4AleyDWUmTrWMLNnFSLEQtxmxgNQnNQ==",
-      "path": "microsoft.extensions.dependencyinjection/8.0.0",
-      "hashPath": "microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512"
+      "sha512": "sha512-BmANAnR5Xd4Oqw7yQ75xOAYODybZQRzdeNucg7kS5wWKd2PNnMdYtJ2Vciy0QLylRmv42DGl5+AFL9izA6F1Rw==",
+      "path": "microsoft.extensions.dependencyinjection/8.0.1",
+      "hashPath": "microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
+    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg==",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0",
-      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+      "sha512": "sha512-3iE7UF7MQkCv1cxzCahz+Y/guQbTqieyxyaWKhrRO91itI9cOKO76OHeQDahqG4MmW5umr3CcCvGmK92lWNlbg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.2",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyModel/8.0.0": {
       "type": "package",
@@ -1677,19 +1668,19 @@
       "path": "microsoft.extensions.dependencymodel/8.0.0",
       "hashPath": "microsoft.extensions.dependencymodel.8.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Logging/8.0.0": {
+    "Microsoft.Extensions.Logging/8.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tvRkov9tAJ3xP51LCv3FJ2zINmv1P8Hi8lhhtcKGqM+ImiTCC84uOPEI4z8Cdq2C3o9e+Aa0Gw0rmrsJD77W+w==",
-      "path": "microsoft.extensions.logging/8.0.0",
-      "hashPath": "microsoft.extensions.logging.8.0.0.nupkg.sha512"
+      "sha512": "sha512-4x+pzsQEbqxhNf1QYRr5TDkLP9UsLT3A6MdRKDDEgrW7h1ljiEPgTNhKYUhNCCAaVpQECVQ+onA91PTPnIp6Lw==",
+      "path": "microsoft.extensions.logging/8.0.1",
+      "hashPath": "microsoft.extensions.logging.8.0.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.Logging.Abstractions/8.0.0": {
+    "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-arDBqTgFCyS0EvRV7O3MZturChstm50OJ0y9bDJvAcmEPJm0FFpFyjU/JLYyStNGGey081DvnQYlncNX5SJJGA==",
-      "path": "microsoft.extensions.logging.abstractions/8.0.0",
-      "hashPath": "microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512"
+      "sha512": "sha512-dL0QGToTxggRLMYY4ZYX5AMwBb+byQBd/5dMiZE07Nv73o6I5Are3C7eQTh7K2+A4ct0PVISSr7TZANbiNb2yQ==",
+      "path": "microsoft.extensions.logging.abstractions/8.0.3",
+      "hashPath": "microsoft.extensions.logging.abstractions.8.0.3.nupkg.sha512"
     },
     "Microsoft.Extensions.ObjectPool/8.0.0": {
       "type": "package",
@@ -1698,12 +1689,12 @@
       "path": "microsoft.extensions.objectpool/8.0.0",
       "hashPath": "microsoft.extensions.objectpool.8.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Options/8.0.0": {
+    "Microsoft.Extensions.Options/8.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JOVOfqpnqlVLUzINQ2fox8evY2SKLYJ3BV8QDe/Jyp21u1T7r45x/R/5QdteURMR5r01GxeJSBBUOCOyaNXA3g==",
-      "path": "microsoft.extensions.options/8.0.0",
-      "hashPath": "microsoft.extensions.options.8.0.0.nupkg.sha512"
+      "sha512": "sha512-dWGKvhFybsaZpGmzkGCbNNwBD1rVlWzrZKANLW/CcbFJpCEceMCGzT7zZwHOGBCbwM0SzBuceMj5HN1LKV1QqA==",
+      "path": "microsoft.extensions.options/8.0.2",
+      "hashPath": "microsoft.extensions.options.8.0.2.nupkg.sha512"
     },
     "Microsoft.Extensions.Primitives/8.0.0": {
       "type": "package",
@@ -2026,13 +2017,6 @@
       "sha512": "sha512-AQTPGMEqv2gh5A91wRMGWJ5Dh9rrsKiHNsIKB6aJE6eIZOYdZM96kg/z4W1EDto1R7jJY1+f/k65D7ZM1H1M6w==",
       "path": "silk.net.sdl/2.20.0",
       "hashPath": "silk.net.sdl.2.20.0.nupkg.sha512"
-    },
-    "SixLabors.Fonts/1.0.0-beta19": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ECJoayRT54VkJNoKBwZZllGvBIvxmnUFXsUCqHU8uAjAFrcdtxNpQ5Auyzw3d4+B+Q3KivKIrd7uO0qiNx/glg==",
-      "path": "sixlabors.fonts/1.0.0-beta19",
-      "hashPath": "sixlabors.fonts.1.0.0-beta19.nupkg.sha512"
     },
     "SkiaSharp/2.88.8": {
       "type": "package",
@@ -2615,26 +2599,26 @@
       "path": "ultz.native.sdl/2.28.4",
       "hashPath": "ultz.native.sdl.2.28.4.nupkg.sha512"
     },
-    "VL.Core/2025.7.0-0369-g117540fa59": {
+    "VL.Core/2025.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-CuzM6jfw0qM6JXFDwmlZIeXSMKFplc5089anLQssnoKHwf/N932DfMTbgY1qlYVIvuR9GLHiAqkaHS4CPhTuDw==",
-      "path": "vl.core/2025.7.0-0369-g117540fa59",
-      "hashPath": "vl.core.2025.7.0-0369-g117540fa59.nupkg.sha512"
+      "sha512": "sha512-92odMrAFMy9r3u30xr9cBzMlwOyIy6LEfeHy1G8KoQZy5mneVoF4SFK2rhtDDEC/kjQ5bbvI1Uh4WpkMTtl2Sg==",
+      "path": "vl.core/2025.7.0",
+      "hashPath": "vl.core.2025.7.0.nupkg.sha512"
     },
-    "VL.CoreLib/2025.7.0-0369-g117540fa59": {
+    "VL.CoreLib/2025.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-T/cNq2qQZ2vU1rEVxhKa8h9tnH0KcSSNvRwDKzXbhJMNXsjSdUTlIb7ZMAN2rwL7Eu2I5Vnlusx02Vnxl2lK7Q==",
-      "path": "vl.corelib/2025.7.0-0369-g117540fa59",
-      "hashPath": "vl.corelib.2025.7.0-0369-g117540fa59.nupkg.sha512"
+      "sha512": "sha512-e0TpFvbz/ztOPbXuflLuuQfh/jSEgBD1fVM0/3mZJdvihOyMEpTaCVq+4jpL0vpzjYAH2JWqsIObPoUQ2R8eNg==",
+      "path": "vl.corelib/2025.7.0",
+      "hashPath": "vl.corelib.2025.7.0.nupkg.sha512"
     },
-    "VL.Serialization.Raw/2025.7.0-0369-g117540fa59": {
+    "VL.Serialization.Raw/2025.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cNO9FJPgXNHhA7dD0d5bdpkLFg52wx5GyWP77/oaAqKkpyihrJwZl3GZqXK8lkvY4ijEDmVGQGE3yY+RrIXM9g==",
-      "path": "vl.serialization.raw/2025.7.0-0369-g117540fa59",
-      "hashPath": "vl.serialization.raw.2025.7.0-0369-g117540fa59.nupkg.sha512"
+      "sha512": "sha512-DozHA0wPHJ9ruASrjOClvFliZKNLEjWP5//RmjuLRo7Bo5p5U0olCel068mZcJnK29k0KnwQbker6BM96XrZrg==",
+      "path": "vl.serialization.raw/2025.7.0",
+      "hashPath": "vl.serialization.raw.2025.7.0.nupkg.sha512"
     },
     "Vortice.Mathematics/1.3.3": {
       "type": "package",
