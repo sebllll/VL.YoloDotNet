@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="KsSdsjY1DFOQPzMLkyqW5x" LanguageVersion="2025.7.0" Version="0.128">
-  <NugetDependency Id="KavmTh4fTsnQVR7nIJVEAX" Location="VL.CoreLib" Version="2025.7.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="KsSdsjY1DFOQPzMLkyqW5x" LanguageVersion="2025.7.0-sbb-0007-g8aa90fc421" Version="0.128">
+  <NugetDependency Id="KavmTh4fTsnQVR7nIJVEAX" Location="VL.CoreLib" Version="2025.7.0-sbb-0007-g8aa90fc421" />
   <Patch Id="Ky7DeankOAENoa2AVdXw85">
     <Canvas Id="Ns5WDYDNtQlOMVrugXWXaK" DefaultCategory="YoloDotNet" CanvasType="FullCategory">
       <!--
@@ -7285,44 +7285,8 @@
         </p:NodeReference>
         <Patch Id="Kk6kbi3tmp2PuSSuHG3Y7R">
           <Canvas Id="OZH94F2LRtvMUsa9xju72e" CanvasType="Group">
-            <ControlPoint Id="R8OyIyx4xnDMcLCPnWA1d8" Bounds="166,164" />
-            <ControlPoint Id="N5JvR9xqM2cN2znJkuvCY6" Bounds="227,307" />
-            <Node Bounds="165,237,86,19" Id="LbGk0YeDRd7LvLYa57WYWo">
-              <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.YoloDotNet.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="BuildModelPath" />
-              </p:NodeReference>
-              <Pin Id="EIw3TBsdQ6EOLsfD1kCiV6" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="GS0wzxfmN4kLSabUo8kPSC" Name="Input" Kind="InputPin" />
-              <Pin Id="HJOqt0SznFvNsmy3J7bYoE" Name="ModelType" Kind="InputPin" />
-              <Pin Id="FEhmneDNzn8M7aE27apXwG" Name="ModelVersion" Kind="InputPin" />
-              <Pin Id="LvxHMFTKe6JPAgOlWmvygX" Name="Output" Kind="OutputPin" />
-              <Pin Id="Ksb4lLzH3z9OL7Bi1nCvGw" Name="Force" Kind="InputPin" />
-            </Node>
-            <Node Bounds="165,366,105,19" Id="Tef3yEcelekQG4hFiRPexE">
-              <p:NodeReference LastCategoryFullName="Main" LastDependency="22-07-05_000_VL.YoloDotNet-2.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="BuildYoloModel" />
-              </p:NodeReference>
-              <Pin Id="EV2AFhB1KjcQSf90OpaiOI" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="IPKe7yLnsXPLWuF6bJgarn" Name="Model Path" Kind="InputPin" />
-              <Pin Id="RC0GWq6isgDNbYg16VZkaI" Name="ImageResize" Kind="InputPin" />
-              <Pin Id="LVpnNuLoAkjO4OB6aGYFYV" Name="FilterQuality" Kind="InputPin" />
-              <Pin Id="IqcMP6JbgnlPT1I8erkKhM" Name="GpuId" Kind="InputPin" />
-              <Pin Id="P5GxMZRnyqZPx1ELpx9XiB" Name="Prime Gpu" Kind="InputPin" />
-              <Pin Id="KaPMg33iSSfQIN1cIlxRjC" Name="Output" Kind="OutputPin" />
-              <Pin Id="N84WLyfUMmRQB0SrI3s6iB" Name="Use GPU" Kind="InputPin" />
-            </Node>
-            <Pad Id="KDgDUxyAk6vORqbc3iGUuE" Comment="ModelType" Bounds="194,187,103,15" ShowValueBox="true" isIOBox="true" Value="ObjectDetection">
-              <p:TypeAnnotation LastCategoryFullName="YoloDotNet.Enums" LastDependency="YoloDotNet.dll">
-                <Choice Kind="TypeFlag" Name="ModelType" />
-              </p:TypeAnnotation>
-            </Pad>
-            <Pad Id="VcYmLVrf3OzQbA1SY8d0QU" Comment="ModelVersion" Bounds="221,217,75,15" ShowValueBox="true" isIOBox="true" Value="V8">
-              <p:TypeAnnotation LastCategoryFullName="YoloDotNet.Enums" LastDependency="YoloDotNet.dll">
-                <Choice Kind="TypeFlag" Name="ModelVersion" />
-              </p:TypeAnnotation>
-            </Pad>
+            <ControlPoint Id="R8OyIyx4xnDMcLCPnWA1d8" Bounds="129,130" />
+            <ControlPoint Id="N5JvR9xqM2cN2znJkuvCY6" Bounds="204,212" />
             <ControlPoint Id="Vva5usQWoHeNayQGrdVysK" Bounds="762,666" />
             <ControlPoint Id="NVQXgHbDSPlLgXPnoZ6CZj" Bounds="785,686" />
             <!--
@@ -7445,26 +7409,12 @@
                 <ControlPoint Id="PTU5VQnTVinPGJVsaKbU6g" Bounds="208,785" />
               </Patch>
             </Node>
-            <Node Bounds="705,1210,65,19" Id="NilLqWaaeLdOUsflJDYQ04">
-              <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
-              </p:NodeReference>
-              <Pin Id="BC68sQ4yNhmLFfkY5Pn6bt" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="MOd4XmBeOxQLPOyIH2HuiD" Name="Initial Result" Kind="InputPin" IsHidden="true" />
-              <Pin Id="V0i9wrXZSNOOK9Bzhrn7u2" Name="Async Notifications" Kind="InputPin" />
-              <Pin Id="KinFyjkxneXP9TbY4GrRwX" Name="Reset" Kind="InputPin" />
-              <Pin Id="MRZOZbHfqqiQCXchdkh7iU" Name="Output" Kind="OutputPin" IsHidden="true" />
-              <Pin Id="B1ifssFQVdlLOkyFxYiyML" Name="Value" Kind="OutputPin" />
-              <Pin Id="OhBULlf7rN2OFFIvTDvSeS" Name="On Data" Kind="OutputPin" />
-            </Node>
-            <Pad Id="GicTwNJAaB3Pbg8GEmiYKo" SlotId="BQpNXGV7MdcNm8Rx984e06" Bounds="167,426" />
+            <Pad Id="GicTwNJAaB3Pbg8GEmiYKo" SlotId="BQpNXGV7MdcNm8Rx984e06" Bounds="104,491" />
             <Pad Id="Q9wTZUbFtT5Lx6dOv4A91w" SlotId="BQpNXGV7MdcNm8Rx984e06" Bounds="610,661" />
             <ControlPoint Id="EvBfYKP17cMN8wTvwPr9lB" Bounds="532,1506" />
-            <ControlPoint Id="EaeeGxAApyoLmdMySXDS2n" Bounds="707,1246" />
-            <ControlPoint Id="B9DDvq2nriyNZzCSqg7YKr" Bounds="247,326" />
-            <ControlPoint Id="P7EOibpiJCHN4TQP9bxzAY" Bounds="207,286" />
-            <ControlPoint Id="PNpieUAziaMLQ7ZY6rAT3o" Bounds="187,266" />
+            <ControlPoint Id="B9DDvq2nriyNZzCSqg7YKr" Bounds="224,231" />
+            <ControlPoint Id="P7EOibpiJCHN4TQP9bxzAY" Bounds="184,191" />
+            <ControlPoint Id="PNpieUAziaMLQ7ZY6rAT3o" Bounds="164,171" />
             <Node Bounds="530,742,724,405" Id="JdtOymtJDlAPJCw6ccb4yT">
               <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -7779,7 +7729,7 @@
             </Pad>
             <ControlPoint Id="EnR0OuPYSAXOjgQspmFOTK" Bounds="1414,956" />
             <Pad Id="HJcGplRaQVUMjVHn4rL7w4" Bounds="1173,720" />
-            <ControlPoint Id="RlmBkJ4sfV0Pc28n6lExQB" Bounds="267,346" />
+            <ControlPoint Id="RlmBkJ4sfV0Pc28n6lExQB" Bounds="244,251" />
             <ControlPoint Id="HuGaOpsuTNsM8u8ZezsjHm" Bounds="853,70" />
             <Node Bounds="409,185,599,311" Id="Dt2F3cgIVe1OWypJimOnuW">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -7959,13 +7909,72 @@
             <ControlPoint Id="S7NzIP9LibePXaUGRZnf1D" Bounds="668,712" />
             <ControlPoint Id="BaNOMu4baQTOh2fvEkgumH" Bounds="692,663" />
             <ControlPoint Id="U5E7kxmBQR1Ox5QbwteKyO" Bounds="912,131" />
+            <Pad Id="P3k8xh2y0KXNdNdcQXzNZs" SlotId="BQpNXGV7MdcNm8Rx984e06" Bounds="104,81" />
+            <Node Bounds="30,110,65,19" Id="GOth6IgbkOxOclTXliSvfA">
+              <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+              </p:NodeReference>
+              <Pin Id="IumHxAIcgF1OQI0YntXxz6" Name="X" Kind="InputPin" />
+              <Pin Id="T1Vh2k2GsgmLeQGjMpgfQ2" Name="Result" Kind="OutputPin" />
+              <Pin Id="BGHAJB5QBZHMhQOhCELTIv" Name="Not Assigned" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="90,272,264,187" Id="VSISHdJxkOsPhMDQ2z2Te8">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              </p:NodeReference>
+              <Pin Id="Oet8uWH111RNcq1xt2ArGF" Name="Condition" Kind="InputPin" />
+              <Patch Id="FAnIpNETDYjNDh6jPucOZZ" ManuallySortedPins="true">
+                <Patch Id="VV7Ml6mbo6YOJjw9gAqxQz" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="SK7DpeHHXPSMxamxILw2QH" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="127,350,86,19" Id="LbGk0YeDRd7LvLYa57WYWo">
+                  <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.YoloDotNet.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="BuildModelPath" />
+                  </p:NodeReference>
+                  <Pin Id="EIw3TBsdQ6EOLsfD1kCiV6" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="GS0wzxfmN4kLSabUo8kPSC" Name="Input" Kind="InputPin" />
+                  <Pin Id="HJOqt0SznFvNsmy3J7bYoE" Name="ModelType" Kind="InputPin" />
+                  <Pin Id="FEhmneDNzn8M7aE27apXwG" Name="ModelVersion" Kind="InputPin" />
+                  <Pin Id="LvxHMFTKe6JPAgOlWmvygX" Name="Output" Kind="OutputPin" />
+                  <Pin Id="Ksb4lLzH3z9OL7Bi1nCvGw" Name="Force" Kind="InputPin" />
+                </Node>
+                <Node Bounds="142,400,105,19" Id="Tef3yEcelekQG4hFiRPexE">
+                  <p:NodeReference LastCategoryFullName="Main" LastDependency="22-07-05_000_VL.YoloDotNet-2.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="BuildYoloModel" />
+                  </p:NodeReference>
+                  <Pin Id="EV2AFhB1KjcQSf90OpaiOI" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="IPKe7yLnsXPLWuF6bJgarn" Name="Model Path" Kind="InputPin" />
+                  <Pin Id="RC0GWq6isgDNbYg16VZkaI" Name="ImageResize" Kind="InputPin" />
+                  <Pin Id="LVpnNuLoAkjO4OB6aGYFYV" Name="FilterQuality" Kind="InputPin" />
+                  <Pin Id="IqcMP6JbgnlPT1I8erkKhM" Name="GpuId" Kind="InputPin" />
+                  <Pin Id="P5GxMZRnyqZPx1ELpx9XiB" Name="Prime Gpu" Kind="InputPin" />
+                  <Pin Id="KaPMg33iSSfQIN1cIlxRjC" Name="Output" Kind="OutputPin" />
+                  <Pin Id="N84WLyfUMmRQB0SrI3s6iB" Name="Use GPU" Kind="InputPin" />
+                </Node>
+                <Pad Id="KDgDUxyAk6vORqbc3iGUuE" Comment="ModelType" Bounds="156,300,103,15" ShowValueBox="true" isIOBox="true" Value="ObjectDetection">
+                  <p:TypeAnnotation LastCategoryFullName="YoloDotNet.Enums" LastDependency="YoloDotNet.dll">
+                    <Choice Kind="TypeFlag" Name="ModelType" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Pad Id="VcYmLVrf3OzQbA1SY8d0QU" Comment="ModelVersion" Bounds="183,330,75,15" ShowValueBox="true" isIOBox="true" Value="V8">
+                  <p:TypeAnnotation LastCategoryFullName="YoloDotNet.Enums" LastDependency="YoloDotNet.dll">
+                    <Choice Kind="TypeFlag" Name="ModelVersion" />
+                  </p:TypeAnnotation>
+                </Pad>
+              </Patch>
+              <ControlPoint Id="QndApQMmlUSMo1KmmqzJai" Bounds="104,453" Alignment="Bottom" />
+              <ControlPoint Id="LCkV9q3CcIFPMjLHfmwd1W" Bounds="104,278" Alignment="Top" />
+            </Node>
           </Canvas>
           <Patch Id="SNwygMK1FLLOJeUYo6P3kZ" Name="Create" ParticipatingElements="L7lNi1fV2HcQC2IQ6Ac29F,LHZ4qthwaOPPIYfkeWxBO0,VHkVzxstBcLPKg1FEXTYEY" />
           <Patch Id="HiJP9fZcC4iOzgk59rj6VJ" Name="Update">
             <Pin Id="HN2t5ZjjktaM6zpOK4EfzA" Name="Confidence" Kind="InputPin" DefaultValue="0.23" />
             <Pin Id="QvOZ5wg9MRiP5qov5SK3uS" Name="Iou" Kind="InputPin" DefaultValue="0.7" />
             <Pin Id="AQclYW5GzmnNQOyU922FaD" Name="Normalized Output" Kind="OutputPin" />
-            <Pin Id="M5Lqplx5ZtdNCilZFohzVC" Name="Pixel Space Output" Kind="OutputPin" />
             <Pin Id="Tk6GMNeEprYLFaVvBsCPJG" Name="avg FPS" Kind="OutputPin" />
             <Pin Id="NLzb3GnXTbzOD1va4ZRHTf" Name="Texture" Kind="InputPin" />
             <Pin Id="VEfc60w3VK8O0YWWBHhc9f" Name="ReadBack Frame Delay" Kind="InputPin" />
@@ -7976,19 +7985,14 @@
           <Link Id="Ps2Dz84qxjZO3TtEtxe3xl" Ids="EmgVbhMbprtN56UA5Rw5wY,R8OyIyx4xnDMcLCPnWA1d8" IsHidden="true" />
           <Link Id="SM1qhIeF47kNPaSnFH6dFf" Ids="LzZJV0eL4ClQEwym8HTK12,N5JvR9xqM2cN2znJkuvCY6" IsHidden="true" />
           <Link Id="H4qNBik7CJjLFFZ99SaWUF" Ids="R8OyIyx4xnDMcLCPnWA1d8,GS0wzxfmN4kLSabUo8kPSC" />
-          <Link Id="RIRQHiLuYVUPzfCaO5RZKM" Ids="LvxHMFTKe6JPAgOlWmvygX,IPKe7yLnsXPLWuF6bJgarn" />
           <Link Id="C1fatbkqVIsMqqrMTl12i2" Ids="N5JvR9xqM2cN2znJkuvCY6,IqcMP6JbgnlPT1I8erkKhM" />
-          <Link Id="Q2ZAybO0JoPMfJxKSyyRFG" Ids="KDgDUxyAk6vORqbc3iGUuE,HJOqt0SznFvNsmy3J7bYoE" />
-          <Link Id="AwThIFwffDpOocKdLUhJgF" Ids="VcYmLVrf3OzQbA1SY8d0QU,FEhmneDNzn8M7aE27apXwG" />
           <Link Id="MpjWHTBc3L5NVUGqLKMfNS" Ids="HN2t5ZjjktaM6zpOK4EfzA,Vva5usQWoHeNayQGrdVysK" IsHidden="true" />
           <Link Id="IriHcxQGkzsMO83luNb6wj" Ids="QvOZ5wg9MRiP5qov5SK3uS,NVQXgHbDSPlLgXPnoZ6CZj" IsHidden="true" />
           <Link Id="PnHUsOC7JOyOAsVVncX1qa" Ids="Vva5usQWoHeNayQGrdVysK,KXBcVOzyFhSPlydcUiYj9x" />
           <Link Id="SB34MaAMjFmM4IqSF0agx4" Ids="NVQXgHbDSPlLgXPnoZ6CZj,QzMTRRTpWOKNE7C9oJc2TJ" />
           <Slot Id="BQpNXGV7MdcNm8Rx984e06" Name="YoloModel" />
-          <Link Id="Ov93m0K0hmUMDo3Jrjc5MD" Ids="KaPMg33iSSfQIN1cIlxRjC,GicTwNJAaB3Pbg8GEmiYKo" />
           <Link Id="MFVnNkEGAD3OoPIVXw9LiT" Ids="Q9wTZUbFtT5Lx6dOv4A91w,S7NzIP9LibePXaUGRZnf1D,JPsOyqpuP0PMLGKkCYaXSh" />
           <Link Id="DDrxvkydvjYN4lppt7zV3e" Ids="EvBfYKP17cMN8wTvwPr9lB,AQclYW5GzmnNQOyU922FaD" IsHidden="true" />
-          <Link Id="E2JxMzA8FH9PLwdGZzWa3K" Ids="EaeeGxAApyoLmdMySXDS2n,M5Lqplx5ZtdNCilZFohzVC" IsHidden="true" />
           <Link Id="E5RPwzJ5PRKPbvLV4WwdIF" Ids="B9DDvq2nriyNZzCSqg7YKr,P5GxMZRnyqZPx1ELpx9XiB" />
           <Link Id="PrVfhrO4yAHNKdsfPPZimi" Ids="AziRO3t4hv0ONWyrplUVQh,B9DDvq2nriyNZzCSqg7YKr" IsHidden="true" />
           <Link Id="VDOcJr806aSNSuAIeug8MA" Ids="P7EOibpiJCHN4TQP9bxzAY,LVpnNuLoAkjO4OB6aGYFYV" />
@@ -8003,7 +8007,6 @@
           <Link Id="O0dgeXR6KuaNtRG4ioDCsM" Ids="Q9wTZUbFtT5Lx6dOv4A91w,ROOiNGcungWP4YJwov4GVl,NPOYxs4pq4cMxNe7uUXA3S" />
           <Link Id="Rp8PegYS0SxMUwr5PLR5kF" Ids="CTcuO1OnjySNTrIgSsYH1i,Ejd9FdpTGEfL2iV1OGogLG" />
           <Link Id="EqGbtk3YWcwMJxWSh02Tqb" Ids="ApoTXYaEy8yLDkEDcJNNUR,VNZsnTqkR2NO6UdRD7WT96" IsFeedback="true" />
-          <Link Id="RNXtd4ep7paMvcOZBAgLQe" Ids="RpwGydgNGHJMj1nlHxyGvJ,V0i9wrXZSNOOK9Bzhrn7u2" />
           <Slot Id="M1ebRlAd5yQMsbR2nEDNqE" Name="r" />
           <Slot Id="TK2Js4WWdXVNHNhbntPrm6" Name="f" />
           <Link Id="L7lNi1fV2HcQC2IQ6Ac29F" Ids="RV47a2HmvlaMhZWpLeV8tq,Dvq7tOtZn4ZMykbGnDz8ad" />
@@ -8032,7 +8035,6 @@
           <Link Id="GaSufIbqCZPP0l8nibPbPG" Ids="HGbKjKAZ5PLMT8F7C7ofsu,JyK5wISTjTaNnF3rCfis6C" />
           <Link Id="QujfmmpZyrMOgGamrmcRnf" Ids="EgQiit09vBPNQOo4AD60Nc,S7dAQwKACKzOzqz5o6hs7R" />
           <Link Id="OQgoQ3PAPk9NYK0c4mmg4I" Ids="PEztDSny438QWszFfIMGDn,VNZsnTqkR2NO6UdRD7WT96" />
-          <Link Id="I04vLqPssELLDo2dMBRLng" Ids="B1ifssFQVdlLOkyFxYiyML,EaeeGxAApyoLmdMySXDS2n" />
           <Link Id="RxoQKkyp30BM1tIA9ADPCi" Ids="RlmBkJ4sfV0Pc28n6lExQB,N84WLyfUMmRQB0SrI3s6iB" />
           <Link Id="OuxSoLyPnJ5LatkRbjsONs" Ids="EZnd7uFUi8DPoz7v1RhJbd,RlmBkJ4sfV0Pc28n6lExQB" IsHidden="true" />
           <Link Id="OozJWBnjOHoNqty84eDPfe" Ids="NLzb3GnXTbzOD1va4ZRHTf,HuGaOpsuTNsM8u8ZezsjHm" IsHidden="true" />
@@ -8103,6 +8105,15 @@
           <Link Id="QK7ASln7QW7Ng0LNYflAiw" Ids="SCph3EhH4kbP5yL0WsQsvS,KICIgCkc7JMLQbkfUi6Vf0" />
           <Link Id="TakDVR6gcnsMMoB6qOAYh3" Ids="U5E7kxmBQR1Ox5QbwteKyO,FC3DldMr0MJP7eDt7JcHLx" />
           <Link Id="O024XbV9OZ8MAFEuTe4pUp" Ids="VEfc60w3VK8O0YWWBHhc9f,U5E7kxmBQR1Ox5QbwteKyO" IsHidden="true" />
+          <Link Id="H2u4W0nrw7mMxsz8OeVkWb" Ids="P3k8xh2y0KXNdNdcQXzNZs,IumHxAIcgF1OQI0YntXxz6" />
+          <Link Id="RIRQHiLuYVUPzfCaO5RZKM" Ids="LvxHMFTKe6JPAgOlWmvygX,IPKe7yLnsXPLWuF6bJgarn" />
+          <Link Id="Q2ZAybO0JoPMfJxKSyyRFG" Ids="KDgDUxyAk6vORqbc3iGUuE,HJOqt0SznFvNsmy3J7bYoE" />
+          <Link Id="AwThIFwffDpOocKdLUhJgF" Ids="VcYmLVrf3OzQbA1SY8d0QU,FEhmneDNzn8M7aE27apXwG" />
+          <Link Id="B3jCfl5kqdRMrTa5oY4Kdt" Ids="BGHAJB5QBZHMhQOhCELTIv,Oet8uWH111RNcq1xt2ArGF" />
+          <Link Id="U4W9mlLuNzaO2JAbfsosdY" Ids="LCkV9q3CcIFPMjLHfmwd1W,QndApQMmlUSMo1KmmqzJai" IsFeedback="true" />
+          <Link Id="PWYOTTgxsf6LfzsiIVdrvy" Ids="KaPMg33iSSfQIN1cIlxRjC,QndApQMmlUSMo1KmmqzJai" />
+          <Link Id="Apon4X2sM3eO8iV6g7zFnE" Ids="QndApQMmlUSMo1KmmqzJai,GicTwNJAaB3Pbg8GEmiYKo" />
+          <Link Id="UCECRvlZZpIPZVG4jtugmU" Ids="P3k8xh2y0KXNdNdcQXzNZs,LCkV9q3CcIFPMjLHfmwd1W" />
         </Patch>
       </Node>
       <!--
@@ -16765,14 +16776,14 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="QO8GUmpKwEKQWQ1r7K6gwY" Location="VL.Skia" Version="2025.7.0" />
+  <NugetDependency Id="QO8GUmpKwEKQWQ1r7K6gwY" Location="VL.Skia" Version="2025.7.0-sbb-0007-g8aa90fc421" />
   <NugetDependency Id="CJOea5Ty7WIL9xjYxaLBCl" Location="Microsoft.AI.DirectML" Version="1.15.4" />
   <DocumentDependency Id="B8fDWKQqNTDPw0K811R22v" Location="./vl/DirectML_Loader.vl" />
   <NugetDependency Id="ALYTSAP0PwdK9pUdFo2eTX" Location="SkiaSharp" Version="2.88.8" />
   <PlatformDependency Id="JuDHJEoRJD4QDNcYtzAuPY" Location="SkiaSharp.dll" />
   <PlatformDependency Id="IiisoY8MRO6MNjONMpQrFt" Location="Stride.Core.Mathematics.dll" />
-  <NugetDependency Id="EHztuFQVgpeLSO9zXf9sHD" Location="Microsoft.ML.OnnxRuntime.Gpu" Version="1.19.2" />
   <PlatformDependency Id="LmPeAEK0NXJNfzzvUCNCRg" Location="./lib/Release/net8.0/YoloDotNet.dll" />
-  <NugetDependency Id="L5fLGFD1dMALd2JakOql0x" Location="VL.Stride" Version="2025.7.0" />
-  <NugetDependency Id="SKUmPKopMmnLSoG4V5LpRs" Location="VL.Stride.Runtime" Version="2025.7.0" />
+  <NugetDependency Id="L5fLGFD1dMALd2JakOql0x" Location="VL.Stride" Version="2025.7.0-sbb-0007-g8aa90fc421" />
+  <NugetDependency Id="SKUmPKopMmnLSoG4V5LpRs" Location="VL.Stride.Runtime" Version="2025.7.0-sbb-0007-g8aa90fc421" />
+  <NugetDependency Id="VDm3DFJHJVaMkJTTGrTLm9" Location="Microsoft.ML.OnnxRuntime.Gpu" Version="1.23.2" />
 </Document>
