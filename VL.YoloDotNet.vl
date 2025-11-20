@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="KsSdsjY1DFOQPzMLkyqW5x" LanguageVersion="2025.7.0-sbb-0009-g1cbce35734" Version="0.128">
-  <NugetDependency Id="KavmTh4fTsnQVR7nIJVEAX" Location="VL.CoreLib" Version="2025.7.0-sbb-0009-g1cbce35734" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="KsSdsjY1DFOQPzMLkyqW5x" LanguageVersion="2025.7.0-sbb-0011-gbdeb3a62a5" Version="0.128">
+  <NugetDependency Id="KavmTh4fTsnQVR7nIJVEAX" Location="VL.CoreLib" Version="2025.7.0-sbb-0011-gbdeb3a62a5" />
   <Patch Id="Ky7DeankOAENoa2AVdXw85">
     <Canvas Id="Ns5WDYDNtQlOMVrugXWXaK" DefaultCategory="YoloDotNet" CanvasType="FullCategory">
       <!--
@@ -6588,10 +6588,16 @@
                   <p:NodeReference LastCategoryFullName="YoloDotNet.Yolo" LastDependency="YoloDotNet.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="RunObjectDetection" />
-                    <PinReference Kind="InputPin" Name="Image" />
+                    <PinReference Kind="InputPin" Name="Img">
+                      <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Graphics.Skia.Unwrapped" LastDependency="VL.Skia.vl">
+                        <Choice Kind="TypeFlag" Name="SKImage" />
+                        <FullNameCategoryReference ID="SkiaSharp" />
+                        <AssemblyReference ID="SkiaSharp.dll" />
+                      </p:DataTypeReference>
+                    </PinReference>
                   </p:NodeReference>
                   <Pin Id="GZNyJGpkYMMM02Pcjkw9xU" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="D0bhCHzCvukNTuxpgwQgL3" Name="Image" Kind="InputPin" />
+                  <Pin Id="JNyv5905HfNMFQFItraCjL" Name="Img" Kind="InputPin" />
                   <Pin Id="KBN3erh4CJaPhQ0Bg96ghm" Name="Confidence" Kind="InputPin" />
                   <Pin Id="SJwvt1RvQ21PhAm4O4mtXS" Name="Iou" Kind="InputPin" />
                   <Pin Id="N6SDqjYltKtNivGoaRX9yz" Name="Output" Kind="StateOutputPin" />
@@ -6745,7 +6751,6 @@
           <Link Id="PvyhksZ8klVNYGFc6E1uLx" Ids="McjGpu2S1p9MzJXP85r0Cz,NlGEjijR9hvL8WSsbiTyWJ" />
           <Link Id="VB3tB3hBGVqQagWJZStm92" Ids="HjcCqTqdfMINIvaatYyxlJ,PNQu4IpqlzUQQ82MSeO7dm" IsHidden="true" />
           <Link Id="A5B5ToRL1WtNwdkdM2U4Jn" Ids="ISFEiJEaZMzPrdkw6o3NQU,HjcCqTqdfMINIvaatYyxlJ" />
-          <Link Id="I38ZDqEW3DhM0AMYfEzEQs" Ids="P7yYBYYs4MjMUPibSyJYyh,D0bhCHzCvukNTuxpgwQgL3" />
           <Link Id="I2p3piJDqGxNIj82xv3xVb" Ids="DVFSZUCk04hQJmx1KOqNwx,C8v53PzaTA2Pd40ByAXbev" IsHidden="true" />
           <Link Id="E2fzPaJ2K2vM26m1aUTheC" Ids="C8v53PzaTA2Pd40ByAXbev,VGeEmwPH72QMZwfJE0uHHI" />
           <Link Id="MZ9Sp1JkgwRO2K5BsEhZ13" Ids="PlmJJDGF7XtMS71dCj83QC,C8ONAPf4t41NbVW2z6bTOv" />
@@ -6754,6 +6759,7 @@
           <Link Id="UEPhLDwBmopOlGo883H6CZ" Ids="E9wDFit7AstL9zqsE4yAZn,Heo3YCHoaORL97lSsuteRD" IsHidden="true" />
           <Link Id="KfIdAbkMdT2OIRTGV2UYVI" Ids="RlPvwmZEV9CLzuL4GgzSUI,BdsYu501NhfNLAjEcodxHD" />
           <Link Id="NwCAc1Tw1FmQAgL9MpEaII" Ids="TvYPPhq5IE2M6v7WMxB9HX,RlPvwmZEV9CLzuL4GgzSUI" IsHidden="true" />
+          <Link Id="S0rwx8wuHoqMyDXdF4xOLI" Ids="P7yYBYYs4MjMUPibSyJYyh,JNyv5905HfNMFQFItraCjL" />
         </Patch>
       </Node>
       <!--
@@ -7377,7 +7383,7 @@
                       <Patch Id="Hs9v6O6XHxiP2gUos4o6xk" ManuallySortedPins="true">
                         <Patch Id="EYwoy3GuuEMOD0ooO4RbYu" Name="Create" ManuallySortedPins="true" />
                         <Patch Id="EVcEL00tkO2OlsmhNwipvZ" Name="Then" ManuallySortedPins="true" />
-                        <Node Bounds="145,989,107,26" Id="OynT2itY3nlODJ3klM3XBi">
+                        <Node Bounds="145,989,107,19" Id="OynT2itY3nlODJ3klM3XBi">
                           <p:NodeReference LastCategoryFullName="YoloDotNet.Yolo" LastDependency="YoloDotNet.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="RunObjectDetection" />
@@ -7476,11 +7482,12 @@
                       <Pin Id="TKhWaPg1EyhNksFQFTUpYp" Name="Cancellation Token" Kind="InputPin" />
                       <Pin Id="JPsOyqpuP0PMLGKkCYaXSh" Name="Model" Kind="InputPin" />
                       <Pin Id="QseEXXXyHrIOiKzkpMwF4e" Name="Output" Kind="OutputPin" />
+                      <Pin Id="E74KuzHsGEJPLcGWp3aSDw" Name="Img" Kind="InputPin" />
+                      <Pin Id="KXBcVOzyFhSPlydcUiYj9x" Name="Confidence" Kind="InputPin" />
+                      <Pin Id="QzMTRRTpWOKNE7C9oJc2TJ" Name="Iou" Kind="InputPin" />
                       <Pin Id="SiRbzq8HPWxMmjSdvKKq3g" Name="Image Data" Kind="InputPin" />
                       <Pin Id="AF5ITRpPM7SL2QDrnkz8CU" Name="Width" Kind="InputPin" />
                       <Pin Id="HsDpZAeJvqILrpPRQwW47c" Name="Height" Kind="InputPin" />
-                      <Pin Id="KXBcVOzyFhSPlydcUiYj9x" Name="Confidence" Kind="InputPin" />
-                      <Pin Id="QzMTRRTpWOKNE7C9oJc2TJ" Name="Iou" Kind="InputPin" />
                     </Node>
                     <Node Bounds="643,907,44,26" Id="JHqQ6GkKnpGOcz6VBX0fuR">
                       <p:NodeReference LastCategoryFullName="Reactive.Task" LastDependency="VL.CoreLib.vl">
@@ -9047,20 +9054,16 @@
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="YoloDotNet" />
                     <Choice Kind="OperationCallFlag" Name="RunClassification" />
-                    <PinReference Kind="InputPin" Name="Img" />
-                    <PinReference Kind="OutputPin" Name="Result">
-                      <p:DataTypeReference p:Type="TypeReference">
-                        <Choice Kind="TypeFlag" Name="List`1" />
-                        <p:TypeArguments>
-                          <TypeReference LastCategoryFullName="YoloDotNet.Models" LastDependency="YoloDotNet.dll">
-                            <Choice Kind="TypeFlag" Name="Classification" />
-                          </TypeReference>
-                        </p:TypeArguments>
+                    <PinReference Kind="InputPin" Name="Img">
+                      <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Graphics.Skia.Unwrapped" LastDependency="VL.Skia.vl">
+                        <Choice Kind="TypeFlag" Name="SKImage" />
+                        <FullNameCategoryReference ID="SkiaSharp" />
+                        <AssemblyReference ID="SkiaSharp.dll" />
                       </p:DataTypeReference>
                     </PinReference>
                   </p:NodeReference>
                   <Pin Id="DRqcShQfRS9N2o9AWllxTY" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="K9SCOxj1Yc1LVMk1ZKhpI8" Name="Image" Kind="InputPin" />
+                  <Pin Id="JuMfBVyla9BNftaGMCTvpu" Name="Img" Kind="InputPin" />
                   <Pin Id="CUUhzpU8lNSPkysAhSfBWL" Name="Classes" Kind="InputPin" />
                   <Pin Id="VU91fAmrwJMPNuTZrTu5yV" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="CsfiY3Q6kOGNuqK0D78hQI" Name="Result" Kind="OutputPin" />
@@ -9083,7 +9086,7 @@
               <Pin Id="HgI5LmVESeIM1Pfr42BaBT" Name="Output" Kind="OutputPin" />
               <Pin Id="MRfG4nhaCHvLO37DlbaaOe" Name="Force" Kind="InputPin" />
             </Node>
-            <Node Bounds="338,288,86,19" Id="JrnsXF9ziWNLLVUqnQAb8T">
+            <Node Bounds="338,288,105,19" Id="JrnsXF9ziWNLLVUqnQAb8T">
               <p:NodeReference LastCategoryFullName="Main" LastDependency="22-07-05_000_VL.YoloDotNet-2.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="BuildYoloModel" />
@@ -9168,7 +9171,7 @@
           <Link Id="OzxQaFTRkVSL2Ayucd36wM" Ids="PDTN1U0Ndb0LwGnRdmAS8l,Ss0iFSqAbJRMQ2zCsRhHSE" IsHidden="true" />
           <Link Id="MAQMHi5TNrwNf6PbrYAuOE" Ids="L79slmOkWoCOB2XvApEPEM,Ar1qZNMmC10MSYS3boKvYy" />
           <Link Id="Typ6kfSAN49Mn1FpEoX2Mq" Ids="GkhYzo5j5hrLRwnRT3KoWk,L79slmOkWoCOB2XvApEPEM" IsHidden="true" />
-          <Link Id="E3oGrT5rrlMLI1xehs9C5C" Ids="RXc4dE3bcziOwYxKRr0PR5,K9SCOxj1Yc1LVMk1ZKhpI8" />
+          <Link Id="KR796xxOi2zMDTH9iUb6cY" Ids="RXc4dE3bcziOwYxKRr0PR5,JuMfBVyla9BNftaGMCTvpu" />
         </Patch>
       </Node>
       <!--
@@ -9207,20 +9210,16 @@
                   <p:NodeReference LastCategoryFullName="YoloDotNet.Yolo" LastDependency="YoloDotNet.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="RunPoseEstimation" />
-                    <PinReference Kind="InputPin" Name="Img" />
-                    <PinReference Kind="OutputPin" Name="Result">
-                      <p:DataTypeReference p:Type="TypeReference">
-                        <Choice Kind="TypeFlag" Name="List`1" />
-                        <p:TypeArguments>
-                          <TypeReference LastCategoryFullName="YoloDotNet.Models" LastDependency="YoloDotNet.dll">
-                            <Choice Kind="TypeFlag" Name="PoseEstimation" />
-                          </TypeReference>
-                        </p:TypeArguments>
+                    <PinReference Kind="InputPin" Name="Img">
+                      <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Graphics.Skia.Unwrapped" LastDependency="VL.Skia.vl">
+                        <Choice Kind="TypeFlag" Name="SKImage" />
+                        <FullNameCategoryReference ID="SkiaSharp" />
+                        <AssemblyReference ID="SkiaSharp.dll" />
                       </p:DataTypeReference>
                     </PinReference>
                   </p:NodeReference>
                   <Pin Id="ArKV2UQZK3aPcyfDJK8WgO" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="JsUZ1k2VNQ5Nlgj8fnZHkh" Name="Image" Kind="InputPin" />
+                  <Pin Id="DTejeMsGiwSMnZTRIOtqgE" Name="Img" Kind="InputPin" />
                   <Pin Id="QhFUzH1WJv8MCfGR5ehHu3" Name="Confidence" Kind="InputPin" />
                   <Pin Id="QYZGfxjBzLFQS1dON9uc2u" Name="Iou" Kind="InputPin" />
                   <Pin Id="JddbvE0tDKxPFn7ll2afPC" Name="Output" Kind="StateOutputPin" />
@@ -9379,7 +9378,7 @@
           <Link Id="VJE2ol8Yz2IMa6X1NYrFjX" Ids="OKR3Lm6L0CvMIWKKUDQ8qQ,Kja39iCmk7EOvy1ai5OI3s" IsHidden="true" />
           <Link Id="MwSciz39KzbOSpCdwooqpz" Ids="Ft9i7ddSCYQLd3aYx1ExSe,HQHvzR5cpHhP5G4fAHy0c4" />
           <Link Id="H72QCJkNhzrNOv60GFLwlu" Ids="TfmlVBTp4LvP6r0O5nHYUG,Ft9i7ddSCYQLd3aYx1ExSe" IsHidden="true" />
-          <Link Id="CmhAlKX2apuOCSgbJ3P4VY" Ids="SZD5zEVcTHgMxNtt1jzafj,JsUZ1k2VNQ5Nlgj8fnZHkh" />
+          <Link Id="OSuWxnf3gyVM6o2H0pVLTu" Ids="SZD5zEVcTHgMxNtt1jzafj,DTejeMsGiwSMnZTRIOtqgE" />
         </Patch>
       </Node>
       <!--
@@ -10753,7 +10752,7 @@
     ************************ YoloObjectClassificationTask (Internal) ************************
 
 -->
-            <Node Name="YoloObjectClassificationTask (Internal)" Bounds="1347,702,251,426" Id="MUjvHA1zShNMAv9g4nNqRY">
+            <Node Name="YoloObjectClassificationTask (Internal)" Bounds="1347,702,252,426" Id="MUjvHA1zShNMAv9g4nNqRY">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" />
               </p:NodeReference>
@@ -10818,20 +10817,16 @@
                           <p:NodeReference LastCategoryFullName="YoloDotNet.Yolo" LastDependency="YoloDotNet.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="RunClassification" />
-                            <PinReference Kind="InputPin" Name="Img" />
-                            <PinReference Kind="OutputPin" Name="Result">
-                              <p:DataTypeReference p:Type="TypeReference">
-                                <Choice Kind="TypeFlag" Name="List`1" />
-                                <p:TypeArguments>
-                                  <TypeReference LastCategoryFullName="YoloDotNet.Models" LastDependency="YoloDotNet.dll">
-                                    <Choice Kind="TypeFlag" Name="Classification" />
-                                  </TypeReference>
-                                </p:TypeArguments>
+                            <PinReference Kind="InputPin" Name="Img">
+                              <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Graphics.Skia.Unwrapped" LastDependency="VL.Skia.vl">
+                                <Choice Kind="TypeFlag" Name="SKImage" />
+                                <FullNameCategoryReference ID="SkiaSharp" />
+                                <AssemblyReference ID="SkiaSharp.dll" />
                               </p:DataTypeReference>
                             </PinReference>
                           </p:NodeReference>
                           <Pin Id="Ad0eCFULWVMOZFToQ8jcuy" Name="Input" Kind="StateInputPin" />
-                          <Pin Id="AP7HGl2sdOJN5k7UQuG2En" Name="Image" Kind="InputPin" />
+                          <Pin Id="G2tUlx60JQoNHlrIT3OyqY" Name="Img" Kind="InputPin" />
                           <Pin Id="SBpTXQWSd87Nr9YuEjNXna" Name="Classes" Kind="InputPin" />
                           <Pin Id="DkbGTZ0BGy0OU8rLIrjHBb" Name="Output" Kind="StateOutputPin" />
                           <Pin Id="Tyq9zfyEEYCMulZF7YaJml" Name="Result" Kind="OutputPin" />
@@ -10858,7 +10853,7 @@
                 <ControlPoint Id="NBFYHXT64ltLAH70kjTe8m" Bounds="1526,800" />
                 <Link Id="IDSmFN7o9BCPatBLRpoe9a" Ids="L6TTRd6TFpdO7bA2pLQR8q,NBFYHXT64ltLAH70kjTe8m" IsHidden="true" />
                 <Link Id="Gni6N7VycmAL3JIGBR20TT" Ids="NBFYHXT64ltLAH70kjTe8m,SBpTXQWSd87Nr9YuEjNXna" />
-                <Link Id="IVTjDbhYoe7MWMOKDMhJzh" Ids="H8gn8O73BCQOxgxPKYXlhS,AP7HGl2sdOJN5k7UQuG2En" />
+                <Link Id="RwgNSTIBAdrLylOxAl99gM" Ids="H8gn8O73BCQOxgxPKYXlhS,G2tUlx60JQoNHlrIT3OyqY" />
               </Patch>
             </Node>
             <Node Bounds="590,545,65,19" Id="HWrtnpbtD5MMfsAaLjykbE">
@@ -11148,7 +11143,7 @@
     ************************ YoloPoseEstimationTask (Internal) ************************
 
 -->
-            <Node Name="YoloPoseEstimationTask (Internal)" Bounds="1262,742,310,406" Id="PPu3zlMKRcrMhkrV5kNEOb">
+            <Node Name="YoloPoseEstimationTask (Internal)" Bounds="1262,742,311,406" Id="PPu3zlMKRcrMhkrV5kNEOb">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" />
               </p:NodeReference>
@@ -11213,20 +11208,16 @@
                           <p:NodeReference LastCategoryFullName="YoloDotNet.Yolo" LastDependency="YoloDotNet.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="RunPoseEstimation" />
-                            <PinReference Kind="InputPin" Name="Img" />
-                            <PinReference Kind="OutputPin" Name="Result">
-                              <p:DataTypeReference p:Type="TypeReference">
-                                <Choice Kind="TypeFlag" Name="List`1" />
-                                <p:TypeArguments>
-                                  <TypeReference LastCategoryFullName="YoloDotNet.Models" LastDependency="YoloDotNet.dll">
-                                    <Choice Kind="TypeFlag" Name="PoseEstimation" />
-                                  </TypeReference>
-                                </p:TypeArguments>
+                            <PinReference Kind="InputPin" Name="Img">
+                              <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Graphics.Skia.Unwrapped" LastDependency="VL.Skia.vl">
+                                <Choice Kind="TypeFlag" Name="SKImage" />
+                                <FullNameCategoryReference ID="SkiaSharp" />
+                                <AssemblyReference ID="SkiaSharp.dll" />
                               </p:DataTypeReference>
                             </PinReference>
                           </p:NodeReference>
                           <Pin Id="QZDBXsCPMn4MPoD5Mzb5AA" Name="Input" Kind="StateInputPin" />
-                          <Pin Id="N8vZJIYrkLmLPOf31PhjnM" Name="Image" Kind="InputPin" />
+                          <Pin Id="R9el7JKZX1jQFDFSToFVVr" Name="Img" Kind="InputPin" />
                           <Pin Id="NV8He2Q6eBcMb4muYGE6Nn" Name="Confidence" Kind="InputPin" />
                           <Pin Id="CcrEexia9sAOkTdL6mJjs3" Name="Iou" Kind="InputPin" />
                           <Pin Id="MfP7k13ncPaNmfBcwUoWoZ" Name="Output" Kind="StateOutputPin" />
@@ -11258,7 +11249,7 @@
                 <ControlPoint Id="Peq6sjxpkyvLd1njyRDZvQ" Bounds="1447,878" />
                 <Link Id="DKe2iQ68o7hLWOABB0NMOw" Ids="L3sjdLn507kNT2U5juAn8k,Peq6sjxpkyvLd1njyRDZvQ" IsHidden="true" />
                 <Link Id="KD7jHUxvjFtP2J4NChxpqd" Ids="Peq6sjxpkyvLd1njyRDZvQ,CcrEexia9sAOkTdL6mJjs3" />
-                <Link Id="IsvOFly8JVsOrGHcEMWu5P" Ids="C4yDm2aA6KaNhXYVPuCWf1,N8vZJIYrkLmLPOf31PhjnM" />
+                <Link Id="DQMGrvhj6voPOsqo6cTrT0" Ids="C4yDm2aA6KaNhXYVPuCWf1,R9el7JKZX1jQFDFSToFVVr" />
               </Patch>
             </Node>
             <Node Bounds="579,516,65,19" Id="AA7MCmtAgmFOcUkHHVHFrs">
@@ -12058,20 +12049,16 @@
                   <p:NodeReference LastCategoryFullName="YoloDotNet.Yolo" LastDependency="YoloDotNet.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="RunObbDetection" />
-                    <PinReference Kind="InputPin" Name="Img" />
-                    <PinReference Kind="OutputPin" Name="Result">
-                      <p:DataTypeReference p:Type="TypeReference">
-                        <Choice Kind="TypeFlag" Name="List`1" />
-                        <p:TypeArguments>
-                          <TypeReference LastCategoryFullName="YoloDotNet.Models" LastDependency="YoloDotNet.dll">
-                            <Choice Kind="TypeFlag" Name="OBBDetection" />
-                          </TypeReference>
-                        </p:TypeArguments>
+                    <PinReference Kind="InputPin" Name="Img">
+                      <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Graphics.Skia.Unwrapped" LastDependency="VL.Skia.vl">
+                        <Choice Kind="TypeFlag" Name="SKImage" />
+                        <FullNameCategoryReference ID="SkiaSharp" />
+                        <AssemblyReference ID="SkiaSharp.dll" />
                       </p:DataTypeReference>
                     </PinReference>
                   </p:NodeReference>
                   <Pin Id="KDCHrEKO5SRNyjFz8TxnXs" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="Ut3kQaFYMcDMvCnr5fncjG" Name="Image" Kind="InputPin" />
+                  <Pin Id="Uo53Td1cdwlMMYKkhHpaTB" Name="Img" Kind="InputPin" />
                   <Pin Id="NtwPvRzoUHyNTHNWFu86Td" Name="Confidence" Kind="InputPin" />
                   <Pin Id="NxdrR9b93ObLdzMRlhcfOY" Name="Iou" Kind="InputPin" />
                   <Pin Id="KUm3KlLNJ7qLbjI6OMmhBx" Name="Output" Kind="StateOutputPin" />
@@ -12228,7 +12215,7 @@
           <Link Id="Gcj90gOT0LNPSrQ1Pzmad6" Ids="U0l3SwH88TsOfafxvFAyG0,MgYxercByp5NuT6mQ8KEhR" IsHidden="true" />
           <Link Id="FFSkuDErTD9LqKVfRQYBIf" Ids="OKmd3FUWcfnPxrAEDCFFer,Jhz7bulqIGyL624YhZwPcC" />
           <Link Id="As37BNPdRgZPskZ7CVMkhL" Ids="OPh7uxiKBz3PxmTvQhpdQN,OKmd3FUWcfnPxrAEDCFFer" IsHidden="true" />
-          <Link Id="H89nkdZ5tL9Pl0qvpeLuIH" Ids="PPCRFausa5TPj2NzxsAAS0,Ut3kQaFYMcDMvCnr5fncjG" />
+          <Link Id="EA2DM5vOEmrQImdZ5KG2o8" Ids="PPCRFausa5TPj2NzxsAAS0,Uo53Td1cdwlMMYKkhHpaTB" />
         </Patch>
       </Node>
       <!--
@@ -13090,7 +13077,7 @@
               <Pin Id="F6YKudQhHV2NpUHPVoC14y" Name="Output" Kind="OutputPin" />
               <Pin Id="MOs7YDkegifNGh6PZEn1vW" Name="Force" Kind="InputPin" />
             </Node>
-            <Node Bounds="337,260,86,19" Id="B9EAwd1EBHFPk2eIWnAruO">
+            <Node Bounds="337,260,105,19" Id="B9EAwd1EBHFPk2eIWnAruO">
               <p:NodeReference LastCategoryFullName="Main" LastDependency="22-07-05_000_VL.YoloDotNet-2.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="BuildYoloModel" />
@@ -13168,7 +13155,7 @@
     ************************ YoloObbTask (Internal) ************************
 
 -->
-            <Node Name="YoloObbTask (Internal)" Bounds="1307,732,265,446" Id="QpuO6LVbmVENJ6TGyKm6AQ">
+            <Node Name="YoloObbTask (Internal)" Bounds="1307,732,266,446" Id="QpuO6LVbmVENJ6TGyKm6AQ">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" />
               </p:NodeReference>
@@ -13233,20 +13220,16 @@
                           <p:NodeReference LastCategoryFullName="YoloDotNet.Yolo" LastDependency="YoloDotNet.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="RunObbDetection" />
-                            <PinReference Kind="InputPin" Name="Img" />
-                            <PinReference Kind="OutputPin" Name="Result">
-                              <p:DataTypeReference p:Type="TypeReference">
-                                <Choice Kind="TypeFlag" Name="List`1" />
-                                <p:TypeArguments>
-                                  <TypeReference LastCategoryFullName="YoloDotNet.Models" LastDependency="YoloDotNet.dll">
-                                    <Choice Kind="TypeFlag" Name="OBBDetection" />
-                                  </TypeReference>
-                                </p:TypeArguments>
+                            <PinReference Kind="InputPin" Name="Img">
+                              <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Graphics.Skia.Unwrapped" LastDependency="VL.Skia.vl">
+                                <Choice Kind="TypeFlag" Name="SKImage" />
+                                <FullNameCategoryReference ID="SkiaSharp" />
+                                <AssemblyReference ID="SkiaSharp.dll" />
                               </p:DataTypeReference>
                             </PinReference>
                           </p:NodeReference>
                           <Pin Id="LSsnI4xzTUsLfU0ksv7EUd" Name="Input" Kind="StateInputPin" />
-                          <Pin Id="DPe3rmQJS02La4obp8h9ne" Name="Image" Kind="InputPin" />
+                          <Pin Id="AFpWsu8epCXLZiN2olHMNn" Name="Img" Kind="InputPin" />
                           <Pin Id="AnyI9skm3ChPvEnv50t9Oo" Name="Confidence" Kind="InputPin" />
                           <Pin Id="CurNwMnghusL5mPxWoC4eo" Name="Iou" Kind="InputPin" />
                           <Pin Id="JsbZuiqkga6PvaTlAuzEUK" Name="Output" Kind="StateOutputPin" />
@@ -13278,7 +13261,7 @@
                 <ControlPoint Id="KUmrF1FiH46LeI5xf6Qlg5" Bounds="1500,880" />
                 <Link Id="D0oT4FlZryWNLEriE00AKB" Ids="DX6X6aIHNESLWH7nVw7dQj,KUmrF1FiH46LeI5xf6Qlg5" IsHidden="true" />
                 <Link Id="KKUFBw7fUe7ORG6YxtOVzf" Ids="KUmrF1FiH46LeI5xf6Qlg5,CurNwMnghusL5mPxWoC4eo" />
-                <Link Id="VzVkocEY73HLZ3NkeoRphs" Ids="ILoTnE41bufQCnttVFDxmt,DPe3rmQJS02La4obp8h9ne" />
+                <Link Id="PrwTErXM6A3Mlc0kforz5u" Ids="ILoTnE41bufQCnttVFDxmt,AFpWsu8epCXLZiN2olHMNn" />
               </Patch>
             </Node>
             <Node Bounds="579,516,65,19" Id="PRLq4Eft23WLyoTbX9KUYA">
@@ -13543,7 +13526,7 @@
           <Pin Id="IGvQPol20Q0P5GBJxK4Fuj" Name="Confidence" Kind="OutputPin" />
           <ControlPoint Id="E9sId8mALpNPu9vz0ZDvHt" Bounds="746,2160" />
           <Link Id="U4qVIwQU2S4MuupPra7nIo" Ids="E9sId8mALpNPu9vz0ZDvHt,IGvQPol20Q0P5GBJxK4Fuj" IsHidden="true" />
-          <Node Bounds="614,1991,73,26" Id="GqNiY3ZIkJTPuEbon58qxt">
+          <Node Bounds="614,1991,73,19" Id="GqNiY3ZIkJTPuEbon58qxt">
             <p:NodeReference LastCategoryFullName="YoloDotNet.Models.Segmentation" LastDependency="YoloDotNet.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="UnpackMask" />
@@ -13645,12 +13628,19 @@
                   <p:NodeReference LastCategoryFullName="YoloDotNet.Yolo" LastDependency="YoloDotNet.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="RunSegmentation" />
-                    <PinReference Kind="InputPin" Name="Image" />
+                    <PinReference Kind="InputPin" Name="Img">
+                      <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Graphics.Skia.Unwrapped" LastDependency="VL.Skia.vl">
+                        <Choice Kind="TypeFlag" Name="SKImage" />
+                        <FullNameCategoryReference ID="SkiaSharp" />
+                        <AssemblyReference ID="SkiaSharp.dll" />
+                      </p:DataTypeReference>
+                    </PinReference>
+                    <PinReference Kind="InputPin" Name="Pixel Confedence" />
                   </p:NodeReference>
                   <Pin Id="Ph1NhFi27HTNLCiNgzWrSt" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="LXekKJtnII8Oa1AEb80bLw" Name="Image" Kind="InputPin" />
+                  <Pin Id="LjRfsADGD0eMpH8AuQ8BWY" Name="Img" Kind="InputPin" />
                   <Pin Id="F0umMyQy9AfOR4qZVXXFWt" Name="Confidence" Kind="InputPin" />
-                  <Pin Id="B6PhWbkKWigPOuKscuAPjL" Name="Pixel Confidence" Kind="InputPin" />
+                  <Pin Id="KzpZX95a1hPPcQUf2Y0dVC" Name="Pixel Confedence" Kind="InputPin" />
                   <Pin Id="E0QEngEEqb1M6nwhFVk5XU" Name="Iou" Kind="InputPin" />
                   <Pin Id="EQhNWasAgyuPYNPFzXxAaG" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="H0E5iM7QYmIO27Xdik0DCx" Name="Result" Kind="OutputPin" />
@@ -13799,8 +13789,6 @@
           <Patch Id="GNgzkszacSULHMDwQVGXPN" Name="ClearData" ParticipatingElements="Ldx2Yi1ArjOPHKSP9qgFcJ" />
           <Link Id="O48tD1gbGJ5QN8yrEGIkXL" Ids="G6dwVcruKdXOIXOLbn1gQz,UYfDPFiyTb9NWGAD1WjMFS" />
           <Link Id="AH18Kk9R02gPncQJTIzaaP" Ids="PjDnWNnogAxPy42h077wjt,G6dwVcruKdXOIXOLbn1gQz" />
-          <Link Id="RrqeSnMHQcSMNHyu1JDhb0" Ids="PpLFbcmvNemMcNNqgGQUg1,LXekKJtnII8Oa1AEb80bLw" />
-          <Link Id="BVNgNApPOoBPXcJn68debI" Ids="BcWghh3xwGNMXv4kfc3OSm,B6PhWbkKWigPOuKscuAPjL" />
           <Link Id="FiYnn18WOmrLQTJ6ErVYtX" Ids="VTjyO6mHvZSLjabVHfCJlw,BcWghh3xwGNMXv4kfc3OSm" IsHidden="true" />
           <Link Id="DkuB982UlPKLSCIaF9jsAQ" Ids="BFW163Acl3fNSIk7ZuLhu0,OSnUdPJKzosNSppbsV2sYv" />
           <Link Id="VWyDgxDMkCEOy7GRCCykjO" Ids="MBVtbxjzJKDMh2mBK06pxg,BFW163Acl3fNSIk7ZuLhu0" IsHidden="true" />
@@ -13809,6 +13797,8 @@
           <Link Id="EyqDUgAe3oyN3kHbwephAe" Ids="TQammJch6Z4OQqxW97Uis5,Lb59oPuSGqRLLfhQV5Welh" />
           <Link Id="MFajtPB5u3ROULNsnMaHbe" Ids="Qw3a63RHnh5Lr34hZ93rx6,TQammJch6Z4OQqxW97Uis5" IsHidden="true" />
           <Link Id="CaBGkXs8n4jOngUehZnPDc" Ids="RebNDSpEcBvObuVg28NDYo,F9I1Rpx4BqsNhbamTOKhac" />
+          <Link Id="MFDshdg4hkyMS3T5NEWSXw" Ids="PpLFbcmvNemMcNNqgGQUg1,LjRfsADGD0eMpH8AuQ8BWY" />
+          <Link Id="DtSBk7a2ym2OMEU4qDwmDZ" Ids="BcWghh3xwGNMXv4kfc3OSm,KzpZX95a1hPPcQUf2Y0dVC" />
         </Patch>
       </Node>
       <!--
@@ -14128,12 +14118,19 @@
                           <p:NodeReference LastCategoryFullName="YoloDotNet.Yolo" LastDependency="YoloDotNet.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="RunSegmentation" />
-                            <PinReference Kind="InputPin" Name="Image" />
+                            <PinReference Kind="InputPin" Name="Img">
+                              <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Graphics.Skia.Unwrapped" LastDependency="VL.Skia.vl">
+                                <Choice Kind="TypeFlag" Name="SKImage" />
+                                <FullNameCategoryReference ID="SkiaSharp" />
+                                <AssemblyReference ID="SkiaSharp.dll" />
+                              </p:DataTypeReference>
+                            </PinReference>
+                            <PinReference Kind="InputPin" Name="Pixel Confedence" />
                           </p:NodeReference>
                           <Pin Id="NFT4NRIjV7hN1Qklajm3VQ" Name="Input" Kind="StateInputPin" />
-                          <Pin Id="HD6KZhIeReSO73BJLe4DKH" Name="Image" Kind="InputPin" />
+                          <Pin Id="QY86EupuZCJORUrPsrxEsg" Name="Img" Kind="InputPin" />
                           <Pin Id="G1CJGX0DHcXLmPX3ECPrk8" Name="Confidence" Kind="InputPin" />
-                          <Pin Id="FP2cf5VeyrRPKdRge8wyjX" Name="Pixel Confidence" Kind="InputPin" />
+                          <Pin Id="Ma3YcLODRjeLmDim1G3Z5s" Name="Pixel Confedence" Kind="InputPin" />
                           <Pin Id="Q0vdniRqOuqPEZV2okaXAN" Name="Iou" Kind="InputPin" />
                           <Pin Id="TFFa9hswQXZPyaJqmTujMT" Name="Output" Kind="StateOutputPin" />
                           <Pin Id="VkAWKQEZ6SEL1rf1MzAuji" Name="Result" Kind="OutputPin" />
@@ -14166,9 +14163,9 @@
                 <ControlPoint Id="MAjs8zxpXznPoUVi4Tl6aR" Bounds="1518,881" />
                 <Link Id="TYhHyJZ2Gm8N43lEWMWutz" Ids="EhWjWyfBe2UMtltckbQ5Nj,MAjs8zxpXznPoUVi4Tl6aR" IsHidden="true" />
                 <Link Id="QJOYbPqdoQpLYWeuMkmkV8" Ids="MAjs8zxpXznPoUVi4Tl6aR,Q0vdniRqOuqPEZV2okaXAN" />
-                <Link Id="QeJKJ0L2kMMOuuKxW1aWB9" Ids="FlBzR9xcgayLqOE6okmW9q,HD6KZhIeReSO73BJLe4DKH" />
-                <Link Id="GnwQZoalepxNdbX9gvDP4y" Ids="AZd07nRL1gXOXyK2rl78Co,FP2cf5VeyrRPKdRge8wyjX" />
                 <ControlPoint Id="AZd07nRL1gXOXyK2rl78Co" Bounds="1488,861" />
+                <Link Id="Go11fhbxjepOP9AxZCgP8M" Ids="FlBzR9xcgayLqOE6okmW9q,QY86EupuZCJORUrPsrxEsg" />
+                <Link Id="InBTHzmpMhbQPu8QlQsZSR" Ids="AZd07nRL1gXOXyK2rl78Co,Ma3YcLODRjeLmDim1G3Z5s" />
               </Patch>
             </Node>
             <Node Bounds="579,516,65,19" Id="JinJaDIwuMMMDlucue65wr">
@@ -16523,9 +16520,7 @@
                   <Pin Id="ShPIfrPCaCmOyP63pEz87H" Name="Cancellation Token" Kind="InputPin" />
                   <Pin Id="FlTk3y5R9YAP6jWKmHNeOj" Name="Model" Kind="InputPin" />
                   <Pin Id="BG3rpAaiQf3LM4IiF3I7vl" Name="Output" Kind="OutputPin" />
-                  <Pin Id="RSr75yLg8I1Ptiff1t8Vtt" Name="Image Data" Kind="InputPin" />
-                  <Pin Id="F4jX9FlxYAAPZkaa4Jx98X" Name="Width" Kind="InputPin" />
-                  <Pin Id="BTsC3qCsVj2P35GAttJpAn" Name="Height" Kind="InputPin" />
+                  <Pin Id="FxdNpTL3kBhNXyy2ugM8jU" Name="Img" Kind="InputPin" />
                   <Pin Id="NU6igyE5Wj9PLUavIkjoef" Name="Confidence" Kind="InputPin" />
                   <Pin Id="CLKCL56OkDtPKUuEB7WR48" Name="Iou" Kind="InputPin" />
                 </Node>
@@ -16540,7 +16535,7 @@
     ************************ YoloObjectDetectionTask (Internal) ************************
 
 -->
-            <Node Name="YoloObjectDetectionTask (Internal)" Bounds="1327,703,245,475" Id="NNMR00qWFJOLKZ233ZymFg">
+            <Node Name="YoloObjectDetectionTask (Internal)" Bounds="1327,703,246,475" Id="NNMR00qWFJOLKZ233ZymFg">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" />
               </p:NodeReference>
@@ -16605,14 +16600,16 @@
                           <p:NodeReference LastCategoryFullName="YoloDotNet.Yolo" LastDependency="YoloDotNet.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="RunObjectDetection" />
-                            <PinReference Kind="InputPin" Name="Image Data" />
-                            <PinReference Kind="InputPin" Name="Width" />
-                            <PinReference Kind="InputPin" Name="Height" />
+                            <PinReference Kind="InputPin" Name="Img">
+                              <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Graphics.Skia.Unwrapped" LastDependency="VL.Skia.vl">
+                                <Choice Kind="TypeFlag" Name="SKImage" />
+                                <FullNameCategoryReference ID="SkiaSharp" />
+                                <AssemblyReference ID="SkiaSharp.dll" />
+                              </p:DataTypeReference>
+                            </PinReference>
                           </p:NodeReference>
                           <Pin Id="LhnlditnH2AQGVZlsbCpR8" Name="Input" Kind="StateInputPin" />
-                          <Pin Id="JTUA7iKpWZNL6x48rod6fn" Name="Image Data" Kind="InputPin" />
-                          <Pin Id="TX25X7DkDaAO3vxFgS6obR" Name="Width" Kind="InputPin" />
-                          <Pin Id="E67ogzP0FmNNlM41Azgyoy" Name="Height" Kind="InputPin" />
+                          <Pin Id="KTpDtzLjI6hPcW3Bkr5bqU" Name="Img" Kind="InputPin" />
                           <Pin Id="LOTlWt8qjgrPKrXaC9EFp4" Name="Confidence" Kind="InputPin" />
                           <Pin Id="SeYVDrvow1mQRHopGhAnbh" Name="Iou" Kind="InputPin" />
                           <Pin Id="PaVofJxTx7jQGC0FOcdtGz" Name="Output" Kind="StateOutputPin" />
@@ -16633,12 +16630,8 @@
                 <Link Id="SOqqjAmghCuNZi1Etzduzk" Ids="S7CrKpKorSEPAo9vUcmXPr,IkU6GFtIDHXLlGxq7SNdD3" />
                 <Link Id="OjnxnA0rRkhLojesllndRP" Ids="MveknBwXA7RQTkmvg6CHOs,LhnlditnH2AQGVZlsbCpR8" />
                 <Link Id="PoQyzGHzw0fPUMTBnv9MCi" Ids="CLtlYb23QZqMzAJdIygIkx,E6Xo6HUGss6L8MVX74Umwy" />
-                <Pin Id="D3a5ijJ4L0MQIVGPq9o2nP" Name="Image Data" Kind="InputPin" />
-                <Link Id="Bw3kbDF5NuLQd07Z8n3zub" Ids="D3a5ijJ4L0MQIVGPq9o2nP,EYwJAtqKQUBOW3mb4fh0wY" IsHidden="true" />
-                <Pin Id="InbCpgLSNLMPF306Y6oMIH" Name="Width" Kind="InputPin" />
-                <Link Id="Ad9APSEBOWLLv9qmXGWnFy" Ids="InbCpgLSNLMPF306Y6oMIH,HE8h0kQ0LDCPkcIzubvJQR" IsHidden="true" />
-                <Pin Id="Q5SZu2AMi9SLf5mR4ne5f1" Name="Height" Kind="InputPin" />
-                <Link Id="IFUkR6CMECDN3TTMfCzyDi" Ids="Q5SZu2AMi9SLf5mR4ne5f1,TQMVCMdPrwrPY7Fn9joIcQ" IsHidden="true" />
+                <Pin Id="RieoEGIWjwNN3WAEsjtcEn" Name="Img" Kind="InputPin" />
+                <Link Id="RpkTk3Xg5FcNDVCcpmiT1r" Ids="RieoEGIWjwNN3WAEsjtcEn,QSIxSBg0HQKQVtzl7VvqF2" IsHidden="true" />
                 <Pin Id="Dz5Kq3OODM8QYZBHdKxWiu" Name="Confidence" Kind="InputPin" />
                 <ControlPoint Id="MzXM90B4HAjM1PUAwbn2Zv" Bounds="1480,850" />
                 <Link Id="G0zYdvL56yDLXi4MrSMJM7" Ids="Dz5Kq3OODM8QYZBHdKxWiu,MzXM90B4HAjM1PUAwbn2Zv" IsHidden="true" />
@@ -16647,12 +16640,8 @@
                 <ControlPoint Id="Dv5328FZ1zVOYVruvojLBc" Bounds="1500,879" />
                 <Link Id="PpDFNNbMfR4MU34umkqXfk" Ids="Nrf5x0Oz11dNsQQqGTtrUz,Dv5328FZ1zVOYVruvojLBc" IsHidden="true" />
                 <Link Id="V79fUa0REmMNE9PMA9RN9N" Ids="Dv5328FZ1zVOYVruvojLBc,SeYVDrvow1mQRHopGhAnbh" />
-                <Link Id="PfRfxabs3nuNgy07yrFBVp" Ids="EYwJAtqKQUBOW3mb4fh0wY,JTUA7iKpWZNL6x48rod6fn" />
-                <ControlPoint Id="EYwJAtqKQUBOW3mb4fh0wY" Bounds="1418,780" />
-                <Link Id="CPx3KXncCOyPHtwtPkJ2I3" Ids="HE8h0kQ0LDCPkcIzubvJQR,TX25X7DkDaAO3vxFgS6obR" />
-                <ControlPoint Id="HE8h0kQ0LDCPkcIzubvJQR" Bounds="1439,800" />
-                <Link Id="K7mkE6h1jXHQVAg6c4CGqC" Ids="TQMVCMdPrwrPY7Fn9joIcQ,E67ogzP0FmNNlM41Azgyoy" />
-                <ControlPoint Id="TQMVCMdPrwrPY7Fn9joIcQ" Bounds="1459,820" />
+                <Link Id="Rz36SolvG5DPY3bf2UddBe" Ids="QSIxSBg0HQKQVtzl7VvqF2,KTpDtzLjI6hPcW3Bkr5bqU" />
+                <ControlPoint Id="QSIxSBg0HQKQVtzl7VvqF2" Bounds="1432,800" />
               </Patch>
             </Node>
             <Node Bounds="579,516,65,19" Id="CHkAN2PQo0gNONS0YG0Jf0">
@@ -16790,12 +16779,10 @@
             <ControlPoint Id="T73Id4FkyQpNANKxY4Pz3X" Bounds="1221,370" />
             <ControlPoint Id="AhUIkPsw3IaNsWG04QR8Db" Bounds="1250,322" />
             <ControlPoint Id="PRyyyRSmi3XOvhgHu0qrfp" Bounds="1195,416" />
-            <ControlPoint Id="UiMPX2YennsOM4uOnw9XwZ" Bounds="744,91" />
-            <ControlPoint Id="Iir4UMEQKoxO6NPTCa6Uwg" Bounds="767,111" />
-            <ControlPoint Id="Nm08LGDZc7kO3T7mQ3zXx7" Bounds="790,131" />
             <ControlPoint Id="LSsXVcJHrlKLysNJX8ZMtY" Bounds="439,230" />
             <ControlPoint Id="V7kRhlxH7aXQUr0Fzl3Hlm" Bounds="389,190" />
             <ControlPoint Id="UTw60sbu3CyNY4h3GBmDiK" Bounds="364,170" />
+            <ControlPoint Id="Qj2ct9vTQ2DPGVNmxr9m5H" Bounds="733,180" />
           </Canvas>
           <Patch Id="BN7HGpSjBBgODUStZztiVS" Name="Create" />
           <Patch Id="SpObxVxjmCdPJhbmbxBiht" Name="Update" ManuallySortedPins="true">
@@ -16821,12 +16808,10 @@
             <Pin Id="BNMNJqNzF3oMWUoOR8fpXD" Name="Process Execution Duration" Kind="OutputPin" Visibility="Optional" />
             <Pin Id="KQctTv2D9XSQLPOUenEtHr" Name="Process Execution Frame Rate" Kind="OutputPin" Visibility="Optional" />
             <Pin Id="E1QeqOuiFbeOqvXr9ON7ul" Name="Process Execution Frame Rate Avg" Kind="OutputPin" Visibility="Optional" />
-            <Pin Id="Cx1Uj2fdtKiLsKJDsZ6P1T" Name="Image Data" Kind="InputPin" />
-            <Pin Id="EznKvSGseV9O7vnPZ5L1Oh" Name="Width" Kind="InputPin" />
-            <Pin Id="QmJN8yAOQdtNpagCdmdfuq" Name="Height" Kind="InputPin" />
             <Pin Id="UIbZJRPvyzNMdLrwj0YntC" Name="Prime Gpu" Kind="InputPin" />
             <Pin Id="R8uzcJtM10MNYvRPaOdAn4" Name="FilterQuality" Kind="InputPin" />
             <Pin Id="QXokYGLQq6gOn6HFGjJjFz" Name="ImageResize" Kind="InputPin" />
+            <Pin Id="VEgSFhAB6Z9LMKvNvtKYX4" Name="Img" Kind="InputPin" />
           </Patch>
           <ProcessDefinition Id="LpYaXxafMgOMNUZfGpqT9E">
             <Fragment Id="SIGQRWX01RJPvJbkfqEbqM" Patch="BN7HGpSjBBgODUStZztiVS" Enabled="true" />
@@ -16893,18 +16878,14 @@
           <Link Id="MOAC3jcCvWpOhFoD4mEVfj" Ids="NSzMh8zXkWzMLuldTUl3DE,PRyyyRSmi3XOvhgHu0qrfp" />
           <Link Id="TSypSbLF3FIPbvJO3EVRzT" Ids="JomA0dyPRD9PdZzEHUmWdr,T73Id4FkyQpNANKxY4Pz3X" />
           <Link Id="FXeBccrh8oBL7ER6hV5QpN" Ids="Iu6VtQGmkwpNNeolCrs9bh,AhUIkPsw3IaNsWG04QR8Db" />
-          <Link Id="L1yPzNyn5s3PijNlKuOdkD" Ids="UiMPX2YennsOM4uOnw9XwZ,RSr75yLg8I1Ptiff1t8Vtt" />
-          <Link Id="MnPHkrnu660MkxdFtmCQgD" Ids="Cx1Uj2fdtKiLsKJDsZ6P1T,UiMPX2YennsOM4uOnw9XwZ" IsHidden="true" />
-          <Link Id="VAtf4a2xBqBPNp01QaEptw" Ids="Iir4UMEQKoxO6NPTCa6Uwg,F4jX9FlxYAAPZkaa4Jx98X" />
-          <Link Id="DRdZbyOtqdhP1fg7KpaBJa" Ids="EznKvSGseV9O7vnPZ5L1Oh,Iir4UMEQKoxO6NPTCa6Uwg" IsHidden="true" />
-          <Link Id="LPeOS1lWxACNBieiyzlFM3" Ids="Nm08LGDZc7kO3T7mQ3zXx7,BTsC3qCsVj2P35GAttJpAn" />
-          <Link Id="TQxBDJX5PNWOkpWPVIiuow" Ids="QmJN8yAOQdtNpagCdmdfuq,Nm08LGDZc7kO3T7mQ3zXx7" IsHidden="true" />
           <Link Id="HLQtAly5ozdOcdTYuRMpAU" Ids="LSsXVcJHrlKLysNJX8ZMtY,FpJs12efYWsLxKaxLZwLWZ" />
           <Link Id="PFtVBTUknEuPqTQJ4tegJS" Ids="UIbZJRPvyzNMdLrwj0YntC,LSsXVcJHrlKLysNJX8ZMtY" IsHidden="true" />
           <Link Id="AhfO8Wv57MMNAwbAxtuniW" Ids="V7kRhlxH7aXQUr0Fzl3Hlm,CX80f7VxCQ2QHsjSRWpX31" />
           <Link Id="KajCe7sce09QayCPf49xIL" Ids="R8uzcJtM10MNYvRPaOdAn4,V7kRhlxH7aXQUr0Fzl3Hlm" IsHidden="true" />
           <Link Id="S1MpJi63MG4M2RBngcwP9p" Ids="UTw60sbu3CyNY4h3GBmDiK,UNMQAEhYZxvLhhBTVhxcax" />
           <Link Id="FZnRoVoihB9NSvTKwdBd2C" Ids="QXokYGLQq6gOn6HFGjJjFz,UTw60sbu3CyNY4h3GBmDiK" IsHidden="true" />
+          <Link Id="IqqwfkvPxLoMRBMCYMzxir" Ids="Qj2ct9vTQ2DPGVNmxr9m5H,FxdNpTL3kBhNXyy2ugM8jU" />
+          <Link Id="En3hplzJAZ2P156lUfbqPY" Ids="VEgSFhAB6Z9LMKvNvtKYX4,Qj2ct9vTQ2DPGVNmxr9m5H" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -16949,14 +16930,14 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="QO8GUmpKwEKQWQ1r7K6gwY" Location="VL.Skia" Version="2025.7.0-sbb-0009-g1cbce35734" />
+  <NugetDependency Id="QO8GUmpKwEKQWQ1r7K6gwY" Location="VL.Skia" Version="2025.7.0-sbb-0011-gbdeb3a62a5" />
   <NugetDependency Id="CJOea5Ty7WIL9xjYxaLBCl" Location="Microsoft.AI.DirectML" Version="1.15.4" />
   <DocumentDependency Id="B8fDWKQqNTDPw0K811R22v" Location="./vl/DirectML_Loader.vl" />
   <NugetDependency Id="ALYTSAP0PwdK9pUdFo2eTX" Location="SkiaSharp" Version="2.88.8" />
   <PlatformDependency Id="JuDHJEoRJD4QDNcYtzAuPY" Location="SkiaSharp.dll" />
   <PlatformDependency Id="IiisoY8MRO6MNjONMpQrFt" Location="Stride.Core.Mathematics.dll" />
   <PlatformDependency Id="LmPeAEK0NXJNfzzvUCNCRg" Location="./lib/Release/net8.0/YoloDotNet.dll" />
-  <NugetDependency Id="L5fLGFD1dMALd2JakOql0x" Location="VL.Stride" Version="2025.7.0-sbb-0009-g1cbce35734" />
-  <NugetDependency Id="SKUmPKopMmnLSoG4V5LpRs" Location="VL.Stride.Runtime" Version="2025.7.0-sbb-0009-g1cbce35734" />
+  <NugetDependency Id="L5fLGFD1dMALd2JakOql0x" Location="VL.Stride" Version="2025.7.0-sbb-0011-gbdeb3a62a5" />
+  <NugetDependency Id="SKUmPKopMmnLSoG4V5LpRs" Location="VL.Stride.Runtime" Version="2025.7.0-sbb-0011-gbdeb3a62a5" />
   <NugetDependency Id="VDm3DFJHJVaMkJTTGrTLm9" Location="Microsoft.ML.OnnxRuntime.Gpu" Version="1.23.2" />
 </Document>
