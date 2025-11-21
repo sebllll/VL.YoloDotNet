@@ -16874,13 +16874,12 @@
     </Node>
   </Patch>
   <NugetDependency Id="QO8GUmpKwEKQWQ1r7K6gwY" Location="VL.Skia" Version="2025.7.0-sbb-0011-gbdeb3a62a5" />
-  <NugetDependency Id="CJOea5Ty7WIL9xjYxaLBCl" Location="Microsoft.AI.DirectML" Version="1.15.4" />
   <DocumentDependency Id="B8fDWKQqNTDPw0K811R22v" Location="./vl/DirectML_Loader.vl" />
   <NugetDependency Id="ALYTSAP0PwdK9pUdFo2eTX" Location="SkiaSharp" Version="2.88.8" />
   <PlatformDependency Id="JuDHJEoRJD4QDNcYtzAuPY" Location="SkiaSharp.dll" />
   <PlatformDependency Id="IiisoY8MRO6MNjONMpQrFt" Location="Stride.Core.Mathematics.dll" />
-  <PlatformDependency Id="LmPeAEK0NXJNfzzvUCNCRg" Location="./lib/Release/net8.0/YoloDotNet.dll" />
+  <PlatformDependency Id="LmPeAEK0NXJNfzzvUCNCRg" Location="./lib/Release/net8.0/YoloDotNet.dll" IsForward="true" />
   <NugetDependency Id="L5fLGFD1dMALd2JakOql0x" Location="VL.Stride" Version="2025.7.0-sbb-0011-gbdeb3a62a5" />
-  <NugetDependency Id="SKUmPKopMmnLSoG4V5LpRs" Location="VL.Stride.Runtime" Version="2025.7.0-sbb-0011-gbdeb3a62a5" />
   <NugetDependency Id="VDm3DFJHJVaMkJTTGrTLm9" Location="Microsoft.ML.OnnxRuntime.Gpu" Version="1.23.2" />
+  <NugetDependency Id="Sxx7KP5XHVhNUIRhfwEDUf" Location="CommunityToolkit.HighPerformance" Version="8.2.2" />
 </Document>
