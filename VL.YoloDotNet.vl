@@ -13907,15 +13907,6 @@
               <Pin Id="LxetSU9dzdPOToyYVTo096" Name="Output" Kind="OutputPin" />
               <Pin Id="BdUaerPucdwN8YmX60pmBt" Name="Use GPU" Kind="InputPin" />
             </Node>
-            <Node Bounds="579,558,83,26" Id="BEaGlVX5tyrPgu049xUem9">
-              <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
-                <Choice Kind="OperationCallFlag" Name="FromSequence" />
-              </p:NodeReference>
-              <Pin Id="Mm5EZWHVAYqLeTjJi1SpzQ" Name="Input" Kind="StateInputPin" />
-              <Pin Id="LejWBcZSAfGMqyP7qtgSWd" Name="Result" Kind="OutputPin" />
-            </Node>
             <Pad Id="HDuW9ezNIUONiiSxu5rams" Comment="ModelType" Bounds="453,82,103,15" ShowValueBox="true" isIOBox="true" Value="Segmentation">
               <p:TypeAnnotation LastCategoryFullName="YoloDotNet.Enums" LastDependency="YoloDotNet.dll">
                 <Choice Kind="TypeFlag" Name="ModelType" />
@@ -14216,6 +14207,7 @@
             <ControlPoint Id="Lv9zuWGPOxHPqRln5WlzaX" Bounds="419,230" />
             <ControlPoint Id="MxHcAMbhRkgOkTzihMzfn9" Bounds="829,190" />
             <ControlPoint Id="QGB9cxrXGcOOMVfrxzlqLw" Bounds="439,250" />
+            <ControlPoint Id="Ft1jONFGPOhLWu2mpMj6yP" Bounds="641,580" />
           </Canvas>
           <Patch Id="GMfyMyTNSWrMxapyLhqdA6" Name="Create" />
           <Patch Id="PVVPefjREKLN9ZZ8GR6vDQ" Name="Update" ManuallySortedPins="true">
@@ -14245,6 +14237,7 @@
             <Pin Id="OvbQe5bBGI6MigKR6rS5QG" Name="Prime Gpu" Kind="InputPin" />
             <Pin Id="NLivH2t6oyLORKPtp6aGSt" Name="Pixel Confidence" Kind="InputPin" />
             <Pin Id="Ebij9szNrXGLEq77d1zBAJ" Name="Use GPU" Kind="InputPin" />
+            <Pin Id="LuGGmqV6ykCLm6x4jVJXXX" Name="On Data" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="FoakjElwnCZMhjDYjKIHHb">
             <Fragment Id="FTRt1cXmsllMHp9fwlSHUX" Patch="GMfyMyTNSWrMxapyLhqdA6" Enabled="true" />
@@ -14258,7 +14251,6 @@
           <Link Id="Tebrkou1AKlL76mPHqgZmI" Ids="BnvwK2r4sxILZfZWNtxOr4,EGqVFiPvhLhLUwKR7A9PAC" />
           <Link Id="DaWBPkwpGPQMVjhkQTDYnT" Ids="HAH6BacbWtiL4swXRadaDo,EZXT99O01EgM7JdJ1Rx5ev" />
           <Link Id="NlHpjMmggXaPg7F65NTPS0" Ids="NXOuBwNL74TLNc7If0PDlt,R0aQSEi35xaM22410PVu5S" />
-          <Link Id="HGoyRq60nK4NgV4rzW4zW8" Ids="LejWBcZSAfGMqyP7qtgSWd,RGaHtvyxUzrQYVJc2pC0NX" />
           <Link Id="GtAEseo4VYqL1MH53JjpY2" Ids="HDuW9ezNIUONiiSxu5rams,D9LTtft5GqjNUZuVxYCGoZ" />
           <Link Id="JhJHiZDsSeJM8HGNE3VKok" Ids="IsF4wXA48EAPe0eFUDMB24,LH4wRRQISAhPOY5U2p7g9I" />
           <Link Id="BLyQzzFBvQKM6VU8PiUGsg" Ids="Q04FbE32kyaNkupAbjRLgI,QdLi2LSQ3r8NHsVjVPyY8p" IsHidden="true" />
@@ -14271,7 +14263,6 @@
           <Link Id="E2YvOGNpYt3PXesf6iuI9q" Ids="GVUzFSFLwMqNn4kLKehl0U,JmKqznPHYBMOycGYLHUo4n" />
           <Link Id="DPwfNey34pUQHBC8WbD993" Ids="FcoaAnOAwndMwsW8o2oqcy,EMs1ANiVZW6LkSXW470yuC" />
           <Link Id="P8Wf8GjoZAwOMqOY9No4hU" Ids="FQqzL6pQ5V4PlmRY6fS9B3,PweGkFphdDzPujBP02119V" />
-          <Link Id="CXZlN3VKKA5MIxOubj4Snu" Ids="NlifOVm8433Oj62TmIMbip,Mm5EZWHVAYqLeTjJi1SpzQ" />
           <Link Id="RWIwv6Jit0AMxRGguRZQzB" Ids="QsZxqCfLsNdLrh58sYpHt0,CvJsVh1vmsRMpzKLdfMT6j" />
           <Link Id="EtQDFVqEddnLivcfmbSTWJ" Ids="S5Fp0JB6WRvMQ0suXEbfHK,QB44OsPvOjcP9Osw8cXhlP" />
           <Link Id="JUTps0MaCyxQVezmTcJUf8" Ids="ULhWMwHrsGMQWUZz423oZF,LyJedo6KMvfOvAU9jHRz7h" />
@@ -14320,6 +14311,9 @@
           <Link Id="TWmLVo4euykOjE9NC99f7V" Ids="NLivH2t6oyLORKPtp6aGSt,MxHcAMbhRkgOkTzihMzfn9" IsHidden="true" />
           <Link Id="NWGqW80Md1lNksxoos5CQc" Ids="QGB9cxrXGcOOMVfrxzlqLw,BdUaerPucdwN8YmX60pmBt" />
           <Link Id="HbEjzaHyk5RLmyfIwPd81a" Ids="Ebij9szNrXGLEq77d1zBAJ,QGB9cxrXGcOOMVfrxzlqLw" IsHidden="true" />
+          <Link Id="A43qBPdVpIxNHSMQzZfjMn" Ids="NlifOVm8433Oj62TmIMbip,RGaHtvyxUzrQYVJc2pC0NX" />
+          <Link Id="BM8Yzikd4rlOK0L9MgCH0p" Ids="QsZxqCfLsNdLrh58sYpHt0,Ft1jONFGPOhLWu2mpMj6yP" />
+          <Link Id="NpavdCj1aT9LyWVpUbhWXA" Ids="Ft1jONFGPOhLWu2mpMj6yP,LuGGmqV6ykCLm6x4jVJXXX" IsHidden="true" />
         </Patch>
       </Node>
       <!--
