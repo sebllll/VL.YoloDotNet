@@ -1127,6 +1127,15 @@
               <ControlPoint Id="UQI8ipSzUx3M4aiiXhce6R" Bounds="651,250" />
               <ControlPoint Id="QA8OfLtbm3ALT9xPUrYKAy" Bounds="936,250" />
               <ControlPoint Id="Qx4hK3o3UU5MaiRVGYd11H" Bounds="1031,250" />
+              <Pad Id="STwGl405kIPLXLNQiMYt7u" Comment="Dispose Cached Outputs" Bounds="1135,280,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+                <p:ValueBoxSettings>
+                  <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+                </p:ValueBoxSettings>
+              </Pad>
+              <ControlPoint Id="T0Na65Ot7fJMaDx27ov4qH" Bounds="1201,240" />
             </Canvas>
             <Patch Id="L8J1l8SL5iZPZHwca7ZUJw" Name="Create" />
             <Patch Id="KhGnfu0tkmkMzHTUkbSrX1" Name="Update">
@@ -1141,6 +1150,7 @@
               <Pin Id="JzLZWyjlmxFQZom6cYaxDX" Name="Output" Kind="OutputPin" />
               <Pin Id="IRJXdLSolrMOL0ktXpnc1q" Name="Prime Gpu" Kind="InputPin" />
               <Pin Id="FlPrxLhjjq7MP6FhofBeB8" Name="Use GPU" Kind="InputPin" Visibility="Optional" />
+              <Pin Id="PDunn4HYBqjP3pOXq5kDhK" Name="Force" Kind="InputPin" />
             </Patch>
             <ProcessDefinition Id="Aewchq53P6sPnTzuzaTX11">
               <Fragment Id="SLwIQlVog7PNSN7QXtPW8j" Patch="L8J1l8SL5iZPZHwca7ZUJw" Enabled="true" />
@@ -1192,6 +1202,9 @@
             <Link Id="A1bd09IXwcYOrm7ABp58Z1" Ids="JIW2UEWoUaOPc4RexredMs,LiGK2ilWa54NLcprZuoXK7" />
             <Link Id="S0hzArWX8CWOl0g3vB11fW" Ids="JIW2UEWoUaOPc4RexredMs,PXcFyEg4mxQOQyyeuiwzRt" />
             <Link Id="BGyR46SudgdLOAEEj4adg7" Ids="MhG2jtMzW4eOtRzdBnctJW,R3hWcmLMC8iP7DP2okDmsT" />
+            <Link Id="QpoDZQNi0xUPXIhXNIc2hB" Ids="STwGl405kIPLXLNQiMYt7u,GDB8mfnKWhtQSCISjcpGN1" />
+            <Link Id="B162j3aUBzILrwmQhCeRic" Ids="T0Na65Ot7fJMaDx27ov4qH,KUwZMaR2VV4QDhikt0ieX2" />
+            <Link Id="UG0QR55aPNIPTYbPNkS7JI" Ids="PDunn4HYBqjP3pOXq5kDhK,T0Na65Ot7fJMaDx27ov4qH" IsHidden="true" />
           </Patch>
         </Node>
         <!--
@@ -6633,6 +6646,7 @@
               <Pin Id="C8ONAPf4t41NbVW2z6bTOv" Name="Prime Gpu" Kind="InputPin" />
               <Pin Id="AFOw6oCOOgZLtxVhG44DDf" Name="Output" Kind="OutputPin" />
               <Pin Id="BijwaBT177pNBJ7SnlCrbL" Name="Use GPU" Kind="InputPin" />
+              <Pin Id="P8hmIp5PZL9M8wJ1W0m68K" Name="Force" Kind="InputPin" />
             </Node>
             <ControlPoint Id="HZQaqU5x4mxMHJRxOPMxpD" Bounds="409,291" />
             <ControlPoint Id="MLT3JyGrplgPwy20DGhqJZ" Bounds="443,310" />
@@ -7995,6 +8009,7 @@
                   <Pin Id="P5GxMZRnyqZPx1ELpx9XiB" Name="Prime Gpu" Kind="InputPin" />
                   <Pin Id="KaPMg33iSSfQIN1cIlxRjC" Name="Output" Kind="OutputPin" />
                   <Pin Id="N84WLyfUMmRQB0SrI3s6iB" Name="Use GPU" Kind="InputPin" />
+                  <Pin Id="SjrZENsK3AVNP87MfwN7ce" Name="Force" Kind="InputPin" />
                 </Node>
                 <Pad Id="KDgDUxyAk6vORqbc3iGUuE" Comment="ModelType" Bounds="156,300,103,15" ShowValueBox="true" isIOBox="true" Value="ObjectDetection">
                   <p:TypeAnnotation LastCategoryFullName="YoloDotNet.Enums" LastDependency="YoloDotNet.dll">
@@ -9098,6 +9113,7 @@
               <Pin Id="UycPAmWYCYJN1y3g4oI6Xl" Name="Prime Gpu" Kind="InputPin" />
               <Pin Id="UiRtpq0rh3CNCzL8GNoBlP" Name="Output" Kind="OutputPin" />
               <Pin Id="T5hUedwxMf8LK1HM6P0DVR" Name="Use GPU" Kind="InputPin" />
+              <Pin Id="AOocTOdGvQGLAXN5B9GSjO" Name="Force" Kind="InputPin" />
             </Node>
             <Node Bounds="442,480,83,26" Id="M7HlSufC0eUNnkPt0it66j">
               <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
@@ -9254,6 +9270,7 @@
               <Pin Id="F6Df78tcduAQOjU5iSU9xP" Name="Prime Gpu" Kind="InputPin" />
               <Pin Id="LfB7473q9MuOzm0QtmFEgI" Name="Output" Kind="OutputPin" />
               <Pin Id="TvUZWJgDFSNMowqDfwiDKF" Name="Use GPU" Kind="InputPin" />
+              <Pin Id="DRcZLB0BVGgQM24VyjapBD" Name="Force" Kind="InputPin" />
             </Node>
             <ControlPoint Id="LDwffjPi7z8QHqrP43SBzF" Bounds="343,307" />
             <ControlPoint Id="JYZFUZSsO1fOUIxF36zPka" Bounds="377,328" />
@@ -10680,6 +10697,7 @@
               <Pin Id="IkjOpZ5RjbGNZV5pP36Zq1" Name="Prime Gpu" Kind="InputPin" />
               <Pin Id="BC0D0I7D0iiPuSOtbBtkXh" Name="Output" Kind="OutputPin" />
               <Pin Id="C14eYuIYgwpPwUvwhOQAs5" Name="Use GPU" Kind="InputPin" />
+              <Pin Id="EQYp7WNpYotQHkomCo1L9d" Name="Force" Kind="InputPin" />
             </Node>
             <Node Bounds="590,598,83,26" Id="Prs3C8QxVtYLTgVL9tM6Zu">
               <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
@@ -11077,6 +11095,7 @@
               <Pin Id="AfbDIdAUE9rNyRTQxR6RqE" Name="Prime Gpu" Kind="InputPin" />
               <Pin Id="UyJNLOgUiozNnnVKKnavC2" Name="Output" Kind="OutputPin" />
               <Pin Id="Fpw9QvDjgdOLNSvWhJjUn0" Name="Use GPU" Kind="InputPin" />
+              <Pin Id="Ucm5Cc0eRZoPuQSxNhceHQ" Name="Force" Kind="InputPin" />
             </Node>
             <Pad Id="HPqoy9fmldLQRQXBuk0EWb" Comment="ModelType" Bounds="478,92,103,15" ShowValueBox="true" isIOBox="true" Value="PoseEstimation">
               <p:TypeAnnotation LastCategoryFullName="YoloDotNet.Enums" LastDependency="YoloDotNet.dll">
@@ -12093,6 +12112,7 @@
               <Pin Id="TTyp6LwBDPAPT37SEtLq3o" Name="Prime Gpu" Kind="InputPin" />
               <Pin Id="AF3eofze7IQLGgH2AZO4Ws" Name="Output" Kind="OutputPin" />
               <Pin Id="Lv8tsNWXh2hLcK1Zks7SF7" Name="Use GPU" Kind="InputPin" />
+              <Pin Id="Ds4DV8gj461L4Wc48Fx7ee" Name="Force" Kind="InputPin" />
             </Node>
             <ControlPoint Id="AuRI2f3zMCjPzPWI64aDSC" Bounds="384,360" />
             <ControlPoint Id="TAVEnewKON9LFryQOpBjhK" Bounds="418,380" />
@@ -13089,6 +13109,7 @@
               <Pin Id="Hrh49Qfva6jNBFv4gkE0Y6" Name="Prime Gpu" Kind="InputPin" />
               <Pin Id="FDfyvga5Z21PKJKRvRrdo5" Name="Output" Kind="OutputPin" />
               <Pin Id="FkSEUNuXhA4PRs7ZKpus6n" Name="Use GPU" Kind="InputPin" />
+              <Pin Id="GFBwa5P36HWPw0evpY5cnx" Name="Force" Kind="InputPin" />
             </Node>
             <Pad Id="GiGQZJVO07sQTZieHXqbUr" Comment="ModelType" Bounds="478,92,103,15" ShowValueBox="true" isIOBox="true" Value="ObbDetection">
               <p:TypeAnnotation LastCategoryFullName="YoloDotNet.Enums" LastDependency="YoloDotNet.dll">
@@ -13605,6 +13626,7 @@
               <Pin Id="Lb59oPuSGqRLLfhQV5Welh" Name="Prime Gpu" Kind="InputPin" />
               <Pin Id="HsULgJrYbOvPIx8UV8AVMy" Name="Output" Kind="OutputPin" />
               <Pin Id="TDppntZkDdmNXLYjLSeV80" Name="Use GPU" Kind="InputPin" />
+              <Pin Id="CtIZsoH5pKQPkc6pkRE0jl" Name="Force" Kind="InputPin" />
             </Node>
             <ControlPoint Id="LuQ4OHgAG36LpRyphVVECX" Bounds="373,290" />
             <ControlPoint Id="RQZkCSUJMs2QFcoEDjBwtN" Bounds="433,341" />
@@ -13893,7 +13915,7 @@
               <Pin Id="HAH6BacbWtiL4swXRadaDo" Name="Output" Kind="OutputPin" />
               <Pin Id="DLyMRhmnbfZNvYUnlOgR9z" Name="Force" Kind="InputPin" />
             </Node>
-            <Node Bounds="337,270,105,19" Id="Qbq0zAHHmC7MEr4uDa13cr">
+            <Node Bounds="337,270,125,19" Id="Qbq0zAHHmC7MEr4uDa13cr">
               <p:NodeReference LastCategoryFullName="Main" LastDependency="22-07-05_000_VL.YoloDotNet-2.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="BuildYoloModel" />
@@ -13906,6 +13928,7 @@
               <Pin Id="EGwTCVm15eJPMd08RiRNI3" Name="Prime Gpu" Kind="InputPin" />
               <Pin Id="LxetSU9dzdPOToyYVTo096" Name="Output" Kind="OutputPin" />
               <Pin Id="BdUaerPucdwN8YmX60pmBt" Name="Use GPU" Kind="InputPin" />
+              <Pin Id="NgHRGlzqJQBPRAnAZKe6QF" Name="Force" Kind="InputPin" />
             </Node>
             <Pad Id="HDuW9ezNIUONiiSxu5rams" Comment="ModelType" Bounds="453,82,103,15" ShowValueBox="true" isIOBox="true" Value="Segmentation">
               <p:TypeAnnotation LastCategoryFullName="YoloDotNet.Enums" LastDependency="YoloDotNet.dll">
@@ -14208,6 +14231,7 @@
             <ControlPoint Id="MxHcAMbhRkgOkTzihMzfn9" Bounds="829,190" />
             <ControlPoint Id="QGB9cxrXGcOOMVfrxzlqLw" Bounds="439,250" />
             <ControlPoint Id="Ft1jONFGPOhLWu2mpMj6yP" Bounds="641,580" />
+            <ControlPoint Id="TCbG3V8vuyIPkADEATVfhG" Bounds="524,170" />
           </Canvas>
           <Patch Id="GMfyMyTNSWrMxapyLhqdA6" Name="Create" />
           <Patch Id="PVVPefjREKLN9ZZ8GR6vDQ" Name="Update" ManuallySortedPins="true">
@@ -14238,6 +14262,7 @@
             <Pin Id="NLivH2t6oyLORKPtp6aGSt" Name="Pixel Confidence" Kind="InputPin" />
             <Pin Id="Ebij9szNrXGLEq77d1zBAJ" Name="Use GPU" Kind="InputPin" />
             <Pin Id="LuGGmqV6ykCLm6x4jVJXXX" Name="On Data" Kind="OutputPin" />
+            <Pin Id="EUToprYfPTKPE3ysKs2KHb" Name="Force" Kind="InputPin" />
           </Patch>
           <ProcessDefinition Id="FoakjElwnCZMhjDYjKIHHb">
             <Fragment Id="FTRt1cXmsllMHp9fwlSHUX" Patch="GMfyMyTNSWrMxapyLhqdA6" Enabled="true" />
@@ -14314,6 +14339,8 @@
           <Link Id="A43qBPdVpIxNHSMQzZfjMn" Ids="NlifOVm8433Oj62TmIMbip,RGaHtvyxUzrQYVJc2pC0NX" />
           <Link Id="BM8Yzikd4rlOK0L9MgCH0p" Ids="QsZxqCfLsNdLrh58sYpHt0,Ft1jONFGPOhLWu2mpMj6yP" />
           <Link Id="NpavdCj1aT9LyWVpUbhWXA" Ids="Ft1jONFGPOhLWu2mpMj6yP,LuGGmqV6ykCLm6x4jVJXXX" IsHidden="true" />
+          <Link Id="KJErK2uoatgQMydPcixpmL" Ids="TCbG3V8vuyIPkADEATVfhG,NgHRGlzqJQBPRAnAZKe6QF" />
+          <Link Id="MJdvX5X5RuUOoqio9VrLRK" Ids="EUToprYfPTKPE3ysKs2KHb,TCbG3V8vuyIPkADEATVfhG" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -16401,6 +16428,7 @@
               <Pin Id="FpJs12efYWsLxKaxLZwLWZ" Name="Prime Gpu" Kind="InputPin" />
               <Pin Id="IqqZrE5xvLfMRHByFumicd" Name="Output" Kind="OutputPin" />
               <Pin Id="DYWBFz1wzNgM4getAZgNFh" Name="Use GPU" Kind="InputPin" />
+              <Pin Id="AOkxHJz2DnjLAsa9HASO4G" Name="Force" Kind="InputPin" />
             </Node>
             <Pad Id="NlkwZyslJOtPNDHNHv30Fa" Comment="ModelType" Bounds="478,92,103,15" ShowValueBox="true" isIOBox="true" Value="ObjectDetection">
               <p:TypeAnnotation LastCategoryFullName="YoloDotNet.Enums" LastDependency="YoloDotNet.dll">
