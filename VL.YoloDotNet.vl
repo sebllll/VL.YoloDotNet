@@ -983,6 +983,7 @@
                         </p:NodeReference>
                         <Pin Id="CF46kjwh448NMJrYXFKprT" Name="Options" Kind="InputPin" />
                         <Pin Id="QqWBMXFweaMOpiSsqSJ3HB" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="LKMUEFz5PNhOudG84gmH3f" Name="Loglevel" Kind="InputPin" />
                       </Node>
                       <Node Bounds="566,900,112,26" Id="T8MJXUN9DS6LyvMHynqe7x">
                         <p:NodeReference LastCategoryFullName="YoloDotNet.Models.YoloOptions" LastDependency="YoloDotNet.dll">
@@ -1051,6 +1052,9 @@
                               <Choice Kind="OperationCallFlag" Name="Create" />
                             </p:NodeReference>
                             <Pin Id="KuSFNG5nHDbOfLyL2DiQND" Name="Gpu Id" Kind="InputPin" />
+                            <Pin Id="SkOL2mhphj7QCZqDQFmiuW" Name="Memory Limit" Kind="InputPin" />
+                            <Pin Id="NSTZeDGYhSmL22H2udOtSZ" Name="Arena Extend Strategy" Kind="InputPin" />
+                            <Pin Id="TUaEz9xPjY3PnaCuUaZOrL" Name="Conv Algo Search" Kind="InputPin" />
                             <Pin Id="BQho4c5NXmOLcedzRgONNd" Name="Prime Gpu" Kind="InputPin" />
                             <Pin Id="NV6HEjPd5d7P3NgAVrh8x0" Name="Output" Kind="StateOutputPin" />
                           </Node>
@@ -16902,6 +16906,6 @@
   <PlatformDependency Id="IiisoY8MRO6MNjONMpQrFt" Location="Stride.Core.Mathematics.dll" />
   <PlatformDependency Id="LmPeAEK0NXJNfzzvUCNCRg" Location="./lib/Release/net8.0/YoloDotNet.dll" IsForward="true" />
   <NugetDependency Id="L5fLGFD1dMALd2JakOql0x" Location="VL.Stride" Version="2025.7.0-sbb-0011-gbdeb3a62a5" />
-  <NugetDependency Id="VDm3DFJHJVaMkJTTGrTLm9" Location="Microsoft.ML.OnnxRuntime.Gpu" Version="1.23.2" />
+  <NugetDependency Id="VDm3DFJHJVaMkJTTGrTLm9" Location="Microsoft.ML.OnnxRuntime.Gpu" IsForward="true" Version="1.23.2" />
   <NugetDependency Id="Sxx7KP5XHVhNUIRhfwEDUf" Location="CommunityToolkit.HighPerformance" Version="8.2.2" />
 </Document>
